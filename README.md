@@ -36,7 +36,7 @@ This project is an attempt to create a an open source e-commerce platform inspir
 - AngulatJS loading bar (http://chieffancypants.github.io/angular-loading-bar/)
 - Custom directives for alerts.
 - DataContext service for exposing REST apis to Angular in a uniform way.
-- Custom directive (*collectionService.js*) for grid (and in general lists of data) with paging and sorting
+- Custom directive (*collectionService.js*) for grid (and in general lists of data) with paging,sorting, filtering, includes
 - Backend generic service pattern with common actions GetAll, Insert, Update, Delete e.t.c 
 
 Happy coding!
