@@ -1,0 +1,29 @@
+﻿<div class="container">
+    <h2 class="main-heading text-center">Pager</h2>
+    <div ng-repeat="item in service.items">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>{{item.author}}</h5>
+
+                <p>{{app.formatDate(item.created_at)}}</p>
+
+                <p class="rating">
+                    <rating ng-model="item.rating" max="5" readonly="true" state-on="'fa fa-star'" state-off="'fa fa-star-o'"></rating>
+                    <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                </p>
+            </div>
+            <div class="col-md-9">
+                <h4>{{item.title}}</h4>
+
+                <div>{{item.text}}</div>
+            </div>
+        </div>
+        <hr/>
+    </div>
+    <div class="clearfix">
+        <div id="pager" class="pull-right">
+            <pagination boundary-links="true" total-items="service.pager.total_records" items-per-page="service.pager.page_size" max-size="service.pager.page_slide" rotate="false" ng-model="service.pager.page_index" ng-change="service.pageChanged(true)" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+        </div>
+    </div>
+
+</div>

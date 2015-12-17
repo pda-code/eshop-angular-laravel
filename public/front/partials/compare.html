@@ -1,0 +1,71 @@
+﻿<div class="container">
+
+    <h2 class="main-heading text-center">Compare Products</h2>
+
+    <div ng-if="app.comparison.items.length===0">
+        <div class="alert alert-info" role="alert">
+        <h6>No products to compare</h6>
+        </div>
+        <a ui-sref="home" class="btn btn-primary">Continue shopping</a>
+    </div>
+
+    <table class="table table-condensed table-bordered table-striped compare-table" ng-if="app.comparison.items.length>0">
+        <thead>
+        <tr>
+            <th></th>
+            <th ng-repeat="item in compareData.products" class="text-center">
+                <p>
+                    <a ui-sref="product({productId:item.id})">
+                    <img ng-src="images/{{item.image}}" alt="{{item.name}}" title="{{item.name}}" class1="img-responsive"  style="width:100px">
+                    </a>
+                </p>
+                <div>{{item.name}} <button class="btn btn-danger btn-xs" ng-click="remove(item.id, $index)"><i class="fa fa-remove"></i></button></div>
+
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Name</td>
+            <td ng-repeat="item in compareData.products">
+                {{item.name}}
+            </td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td ng-repeat="item in compareData.products">
+                {{app.formatPrice(item.taxed_price)}}
+            </td>
+        </tr>
+        <tr>
+            <td>Rating</td>
+            <td ng-repeat="item in compareData.products">
+                <rating ng-model="item.rating" max="5" readonly="true" state-on="'fa fa-star'" state-off="'fa fa-star-o'"></rating>
+            </td>
+        </tr>
+        <tr>
+            <td>Manufacturer</td>
+            <td ng-repeat="item in compareData.products">
+                {{item.manufacturer_name}}
+            </td>
+        </tr>
+        <tr>
+            <td>Model</td>
+            <td ng-repeat="item in compareData.products">
+                {{item.model}}
+            </td>
+        </tr>
+        <tr ng-repeat-start="group in compareData.groups">
+            <td><h3>{{group.name}}</h3></td>
+            <td ng-repeat="item in compareData.products"></td>
+        </tr>
+        <tr ng-repeat-start="attr in group.attributes">
+            <td>{{attr.name}}</td>
+            <td ng-repeat="product in compareData.products">{{findValue(product.id,attr.products)}}</td>
+        </tr>
+        <tr ng-repeat-end></tr>
+        <tr ng-repeat-end></tr>
+
+        </tbody>
+    </table>
+</div>

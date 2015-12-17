@@ -1,0 +1,319 @@
+{
+    "$App": {
+        "pages": "Pages(el-GR)",
+        "locale": "Locale(el-GR)",
+        "ok": "OK(el-GR)",
+        "cancel": "Cancel(el-GR)",
+        "edit": "Edit(el-GR)",
+        "details": "Details(el-GR)",
+        "delete": "Delete(el-GR)",
+        "create": "New(el-GR)",
+        "save": "Save(el-GR)",
+        "validation": {
+            "required": "Field [{{field}}] is required(el-GR)",
+            "number": "Field [{{field}}] must be a valid number(el-GR)",
+            "email": "Field [{{field}}] must be a valid email(el-GR)"
+        },
+        "pager": {
+            "recordsFound": "record(s) found(el-GR)",
+            "show": "Show(el-GR)",
+            "entries": "entries(el-GR)"
+        },
+        "validationHeader": "There are some validation errors:(el-GR)",
+        "errorHeader": "Error(el-GR)",
+        "successHeader": "Changes saved succcessfully(el-GR)"
+    },
+    "Order": {
+        "$displayName": "Order(el-GR)",
+        "$entitySetDisplayName": "Orders(el-GR)",
+        "Id": "Id(el-GR)",
+        "MyInt": "My Int(el-GR)",
+        "MyString": "My String(el-GR)",
+        "MyDateTime": "My Date Time(el-GR)",
+        "MyDecimal": "My Decimal(el-GR)",
+        "MyDouble": "My Double(el-GR)",
+        "MyBoolean": "My Boolean(el-GR)",
+        "BillingAddress": "Billing Address(el-GR)",
+        "CustomerId": "Customer Id(el-GR)",
+        "Customer": "Customer(el-GR)",
+        "OrderDetails": "Order Details(el-GR)",
+        "Tags": "Tags(el-GR)",
+        "$views": {
+            "Index": {
+                "title": "Orders(el-GR)",
+                "description": "List of 'Orders'(el-GR)"
+            },
+            "CreateOrEdit": {
+                "title": "Order(el-GR)",
+                "description": "Create or Edit a 'Order'(el-GR)"
+            },
+            "Details": {
+                "title": "Order(el-GR)",
+                "description": "Details of 'Order'(el-GR)"
+            }
+        }
+    },
+    "OrderDetail": {
+        "$displayName": "Order Detail(el-GR)",
+        "$entitySetDisplayName": "Order Details(el-GR)",
+        "Id": "Id(el-GR)",
+        "OrderId": "Order Id(el-GR)",
+        "Order": "Order(el-GR)",
+        "ProductId": "Product Id(el-GR)",
+        "Product": "Product(el-GR)",
+        "Quantity": "Quantity(el-GR)",
+        "Price": "Price(el-GR)",
+        "$views": {
+            "Index": {
+                "title": "Order Details(el-GR)",
+                "description": "List of 'Order Details'(el-GR)"
+            },
+            "CreateOrEdit": {
+                "title": "Order Detail(el-GR)",
+                "description": "Create or Edit a 'Order Detail'(el-GR)"
+            },
+            "Details": {
+                "title": "Order Detail(el-GR)",
+                "description": "Details of 'Order Detail'(el-GR)"
+            }
+        }
+    },
+    "Customer": {
+        "$displayName": "Customer(el-GR)",
+        "$entitySetDisplayName": "Customers(el-GR)",
+        "Id": "Id(el-GR)",
+        "Name": "Name(el-GR)",
+        "Address": "Address(el-GR)",
+        "Photo": "Photo(el-GR)",
+        "Orders": "Orders(el-GR)",
+        "$views": {
+            "Index": {
+                "title": "Customers(el-GR)",
+                "description": "List of 'Customers'(el-GR)"
+            },
+            "CreateOrEdit": {
+                "title": "Customer(el-GR)",
+                "description": "Create or Edit a 'Customer'(el-GR)"
+            },
+            "Details": {
+                "title": "Customer(el-GR)",
+                "description": "Details of 'Customer'(el-GR)"
+            }
+        }
+    },
+    "Product": {
+        "$displayName": "Product(el-GR)",
+        "$entitySetDisplayName": "Products(el-GR)",
+        "Id": "Id(el-GR)",
+        "Name": "Name(el-GR)",
+        "Decription": "Decription(el-GR)",
+        "CategoryId": "Category Id(el-GR)",
+        "Category": "Category(el-GR)",
+        "OrderDetails": "Order Details(el-GR)",
+        "$views": {
+            "Index": {
+                "title": "Products(el-GR)",
+                "description": "List of 'Products'(el-GR)"
+            },
+            "CreateOrEdit": {
+                "title": "Product(el-GR)",
+                "description": "Create or Edit a 'Product'(el-GR)"
+            },
+            "Details": {
+                "title": "Product(el-GR)",
+                "description": "Details of 'Product'(el-GR)"
+            }
+        }
+    },
+    "ProductCategory": {
+        "$displayName": "Product Category(el-GR)",
+        "$entitySetDisplayName": "Product Categories(el-GR)",
+        "Id": "Id(el-GR)",
+        "Name": "Name(el-GR)",
+        "Photo": "Photo(el-GR)",
+        "Products": "Products(el-GR)",
+        "$views": {
+            "Index": {
+                "title": "Product Categories(el-GR)",
+                "description": "List of 'Product Categories'(el-GR)"
+            },
+            "CreateOrEdit": {
+                "title": "Product Category(el-GR)",
+                "description": "Create or Edit a 'Product Category'(el-GR)"
+            },
+            "Details": {
+                "title": "Product Category(el-GR)",
+                "description": "Details of 'Product Category'(el-GR)"
+            }
+        }
+    },
+    "Address": {
+        "$displayName": "Address(el-GR)",
+        "$entitySetDisplayName": "Addresses(el-GR)",
+        "Id": "Id(el-GR)",
+        "Street": "Street(el-GR)",
+        "City": "City(el-GR)",
+        "BillingOrder": "Billing Order(el-GR)",
+        "$views": {
+            "Index": {
+                "title": "Addresses(el-GR)",
+                "description": "List of 'Addresses'(el-GR)"
+            },
+            "CreateOrEdit": {
+                "title": "Address(el-GR)",
+                "description": "Create or Edit a 'Address'(el-GR)"
+            },
+            "Details": {
+                "title": "Address(el-GR)",
+                "description": "Details of 'Address'(el-GR)"
+            }
+        }
+    },
+    "Tag": {
+        "$displayName": "Tag(el-GR)",
+        "$entitySetDisplayName": "Tags(el-GR)",
+        "Id": "Id(el-GR)",
+        "Name": "Name(el-GR)",
+        "Orders": "Orders(el-GR)",
+        "$views": {
+            "Index": {
+                "title": "Tags(el-GR)",
+                "description": "List of 'Tags'(el-GR)"
+            },
+            "CreateOrEdit": {
+                "title": "Tag(el-GR)",
+                "description": "Create or Edit a 'Tag'(el-GR)"
+            },
+            "Details": {
+                "title": "Tag(el-GR)",
+                "description": "Details of 'Tag'(el-GR)"
+            }
+        }
+    },
+    "OrderIndex": {
+        "$displayName": "Order Index(el-GR)",
+        "$entitySetDisplayName": "Order Index(el-GR)",
+        "Orders": "Orders(el-GR)",
+        "$views": {}
+    },
+    "OrderCreateOrEdit": {
+        "$displayName": "Order Create Or Edit(el-GR)",
+        "$entitySetDisplayName": "Order Create Or Edit(el-GR)",
+        "Order": "Order(el-GR)",
+        "$views": {}
+    },
+    "OrderDetails": {
+        "$displayName": "Order Details(el-GR)",
+        "$entitySetDisplayName": "Order Details(el-GR)",
+        "Order": "Order(el-GR)",
+        "$views": {}
+    },
+    "OrderDetailIndex": {
+        "$displayName": "Order Detail Index(el-GR)",
+        "$entitySetDisplayName": "Order Detail Index(el-GR)",
+        "OrderDetails": "Order Details(el-GR)",
+        "$views": {}
+    },
+    "OrderDetailCreateOrEdit": {
+        "$displayName": "Order Detail Create Or Edit(el-GR)",
+        "$entitySetDisplayName": "Order Detail Create Or Edit(el-GR)",
+        "OrderDetail": "Order Detail(el-GR)",
+        "$views": {}
+    },
+    "OrderDetailDetails": {
+        "$displayName": "Order Detail Details(el-GR)",
+        "$entitySetDisplayName": "Order Detail Details(el-GR)",
+        "OrderDetail": "Order Detail(el-GR)",
+        "$views": {}
+    },
+    "CustomerIndex": {
+        "$displayName": "Customer Index(el-GR)",
+        "$entitySetDisplayName": "Customer Index(el-GR)",
+        "Customers": "Customers(el-GR)",
+        "$views": {}
+    },
+    "CustomerCreateOrEdit": {
+        "$displayName": "Customer Create Or Edit(el-GR)",
+        "$entitySetDisplayName": "Customer Create Or Edit(el-GR)",
+        "Customer": "Customer(el-GR)",
+        "$views": {}
+    },
+    "CustomerDetails": {
+        "$displayName": "Customer Details(el-GR)",
+        "$entitySetDisplayName": "Customer Details(el-GR)",
+        "Customer": "Customer(el-GR)",
+        "$views": {}
+    },
+    "ProductIndex": {
+        "$displayName": "Product Index(el-GR)",
+        "$entitySetDisplayName": "Product Index(el-GR)",
+        "Products": "Products(el-GR)",
+        "$views": {}
+    },
+    "ProductCreateOrEdit": {
+        "$displayName": "Product Create Or Edit(el-GR)",
+        "$entitySetDisplayName": "Product Create Or Edit(el-GR)",
+        "Product": "Product(el-GR)",
+        "$views": {}
+    },
+    "ProductDetails": {
+        "$displayName": "Product Details(el-GR)",
+        "$entitySetDisplayName": "Product Details(el-GR)",
+        "Product": "Product(el-GR)",
+        "$views": {}
+    },
+    "ProductCategoryIndex": {
+        "$displayName": "Product Category Index(el-GR)",
+        "$entitySetDisplayName": "Product Category Index(el-GR)",
+        "ProductCategories": "Product Categories(el-GR)",
+        "$views": {}
+    },
+    "ProductCategoryCreateOrEdit": {
+        "$displayName": "Product Category Create Or Edit(el-GR)",
+        "$entitySetDisplayName": "Product Category Create Or Edit(el-GR)",
+        "ProductCategory": "Product Category(el-GR)",
+        "$views": {}
+    },
+    "ProductCategoryDetails": {
+        "$displayName": "Product Category Details(el-GR)",
+        "$entitySetDisplayName": "Product Category Details(el-GR)",
+        "ProductCategory": "Product Category(el-GR)",
+        "$views": {}
+    },
+    "AddressIndex": {
+        "$displayName": "Address Index(el-GR)",
+        "$entitySetDisplayName": "Address Index(el-GR)",
+        "Addresses": "Addresses(el-GR)",
+        "$views": {}
+    },
+    "AddressCreateOrEdit": {
+        "$displayName": "Address Create Or Edit(el-GR)",
+        "$entitySetDisplayName": "Address Create Or Edit(el-GR)",
+        "Address": "Address(el-GR)",
+        "$views": {}
+    },
+    "AddressDetails": {
+        "$displayName": "Address Details(el-GR)",
+        "$entitySetDisplayName": "Address Details(el-GR)",
+        "Address": "Address(el-GR)",
+        "$views": {}
+    },
+    "TagIndex": {
+        "$displayName": "Tag Index(el-GR)",
+        "$entitySetDisplayName": "Tag Index(el-GR)",
+        "Tags": "Tags(el-GR)",
+        "$views": {}
+    },
+    "TagCreateOrEdit": {
+        "$displayName": "Tag Create Or Edit(el-GR)",
+        "$entitySetDisplayName": "Tag Create Or Edit(el-GR)",
+        "Tag": "Tag(el-GR)",
+        "$views": {}
+    },
+    "TagDetails": {
+        "$displayName": "Tag Details(el-GR)",
+        "$entitySetDisplayName": "Tag Details(el-GR)",
+        "Tag": "Tag(el-GR)",
+        "$views": {}
+    }
+}

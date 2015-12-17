@@ -1,0 +1,319 @@
+{
+    "$App": {
+        "pages": "Pages",
+        "locale": "Locale",
+        "ok": "OK",
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "details": "Details",
+        "delete": "Delete",
+        "create": "New",
+        "save": "Save",
+        "validation": {
+            "required": "Field [{{field}}] is required",
+            "number": "Field [{{field}}] must be a valid number",
+            "email": "Field [{{field}}] must be a valid email"
+        },
+        "pager": {
+            "recordsFound": "record(s) found",
+            "show": "Show",
+            "entries": "entries"
+        },
+        "validationHeader": "There are some validation errors:",
+        "errorHeader": "Error",
+        "successHeader": "Changes saved succcessfully"
+    },
+    "Order": {
+        "$displayName": "Order",
+        "$entitySetDisplayName": "Orders",
+        "Id": "Id",
+        "MyInt": "My Int",
+        "MyString": "My String",
+        "MyDateTime": "My Date Time",
+        "MyDecimal": "My Decimal",
+        "MyDouble": "My Double",
+        "MyBoolean": "My Boolean",
+        "BillingAddress": "Billing Address",
+        "CustomerId": "Customer Id",
+        "Customer": "Customer",
+        "OrderDetails": "Order Details",
+        "Tags": "Tags",
+        "$views": {
+            "Index": {
+                "title": "Orders",
+                "description": "List of 'Orders'"
+            },
+            "CreateOrEdit": {
+                "title": "Order",
+                "description": "Create or Edit a 'Order'"
+            },
+            "Details": {
+                "title": "Order",
+                "description": "Details of 'Order'"
+            }
+        }
+    },
+    "OrderDetail": {
+        "$displayName": "Order Detail",
+        "$entitySetDisplayName": "Order Details",
+        "Id": "Id",
+        "OrderId": "Order Id",
+        "Order": "Order",
+        "ProductId": "Product Id",
+        "Product": "Product",
+        "Quantity": "Quantity",
+        "Price": "Price",
+        "$views": {
+            "Index": {
+                "title": "Order Details",
+                "description": "List of 'Order Details'"
+            },
+            "CreateOrEdit": {
+                "title": "Order Detail",
+                "description": "Create or Edit a 'Order Detail'"
+            },
+            "Details": {
+                "title": "Order Detail",
+                "description": "Details of 'Order Detail'"
+            }
+        }
+    },
+    "Customer": {
+        "$displayName": "Customer",
+        "$entitySetDisplayName": "Customers",
+        "Id": "Id",
+        "Name": "Name",
+        "Address": "Address",
+        "Photo": "Photo",
+        "Orders": "Orders",
+        "$views": {
+            "Index": {
+                "title": "Customers",
+                "description": "List of 'Customers'"
+            },
+            "CreateOrEdit": {
+                "title": "Customer",
+                "description": "Create or Edit a 'Customer'"
+            },
+            "Details": {
+                "title": "Customer",
+                "description": "Details of 'Customer'"
+            }
+        }
+    },
+    "Product": {
+        "$displayName": "Product",
+        "$entitySetDisplayName": "Products",
+        "Id": "Id",
+        "Name": "Name",
+        "Decription": "Decription",
+        "CategoryId": "Category Id",
+        "Category": "Category",
+        "OrderDetails": "Order Details",
+        "$views": {
+            "Index": {
+                "title": "Products",
+                "description": "List of 'Products'"
+            },
+            "CreateOrEdit": {
+                "title": "Product",
+                "description": "Create or Edit a 'Product'"
+            },
+            "Details": {
+                "title": "Product",
+                "description": "Details of 'Product'"
+            }
+        }
+    },
+    "ProductCategory": {
+        "$displayName": "Product Category",
+        "$entitySetDisplayName": "Product Categories",
+        "Id": "Id",
+        "Name": "Name",
+        "Photo": "Photo",
+        "Products": "Products",
+        "$views": {
+            "Index": {
+                "title": "Product Categories",
+                "description": "List of 'Product Categories'"
+            },
+            "CreateOrEdit": {
+                "title": "Product Category",
+                "description": "Create or Edit a 'Product Category'"
+            },
+            "Details": {
+                "title": "Product Category",
+                "description": "Details of 'Product Category'"
+            }
+        }
+    },
+    "Address": {
+        "$displayName": "Address",
+        "$entitySetDisplayName": "Addresses",
+        "Id": "Id",
+        "Street": "Street",
+        "City": "City",
+        "BillingOrder": "Billing Order",
+        "$views": {
+            "Index": {
+                "title": "Addresses",
+                "description": "List of 'Addresses'"
+            },
+            "CreateOrEdit": {
+                "title": "Address",
+                "description": "Create or Edit a 'Address'"
+            },
+            "Details": {
+                "title": "Address",
+                "description": "Details of 'Address'"
+            }
+        }
+    },
+    "Tag": {
+        "$displayName": "Tag",
+        "$entitySetDisplayName": "Tags",
+        "Id": "Id",
+        "Name": "Name",
+        "Orders": "Orders",
+        "$views": {
+            "Index": {
+                "title": "Tags",
+                "description": "List of 'Tags'"
+            },
+            "CreateOrEdit": {
+                "title": "Tag",
+                "description": "Create or Edit a 'Tag'"
+            },
+            "Details": {
+                "title": "Tag",
+                "description": "Details of 'Tag'"
+            }
+        }
+    },
+    "OrderIndex": {
+        "$displayName": "Order Index",
+        "$entitySetDisplayName": "Order Index",
+        "Orders": "Orders",
+        "$views": {}
+    },
+    "OrderCreateOrEdit": {
+        "$displayName": "Order Create Or Edit",
+        "$entitySetDisplayName": "Order Create Or Edit",
+        "Order": "Order",
+        "$views": {}
+    },
+    "OrderDetails": {
+        "$displayName": "Order Details",
+        "$entitySetDisplayName": "Order Details",
+        "Order": "Order",
+        "$views": {}
+    },
+    "OrderDetailIndex": {
+        "$displayName": "Order Detail Index",
+        "$entitySetDisplayName": "Order Detail Index",
+        "OrderDetails": "Order Details",
+        "$views": {}
+    },
+    "OrderDetailCreateOrEdit": {
+        "$displayName": "Order Detail Create Or Edit",
+        "$entitySetDisplayName": "Order Detail Create Or Edit",
+        "OrderDetail": "Order Detail",
+        "$views": {}
+    },
+    "OrderDetailDetails": {
+        "$displayName": "Order Detail Details",
+        "$entitySetDisplayName": "Order Detail Details",
+        "OrderDetail": "Order Detail",
+        "$views": {}
+    },
+    "CustomerIndex": {
+        "$displayName": "Customer Index",
+        "$entitySetDisplayName": "Customer Index",
+        "Customers": "Customers",
+        "$views": {}
+    },
+    "CustomerCreateOrEdit": {
+        "$displayName": "Customer Create Or Edit",
+        "$entitySetDisplayName": "Customer Create Or Edit",
+        "Customer": "Customer",
+        "$views": {}
+    },
+    "CustomerDetails": {
+        "$displayName": "Customer Details",
+        "$entitySetDisplayName": "Customer Details",
+        "Customer": "Customer",
+        "$views": {}
+    },
+    "ProductIndex": {
+        "$displayName": "Product Index",
+        "$entitySetDisplayName": "Product Index",
+        "Products": "Products",
+        "$views": {}
+    },
+    "ProductCreateOrEdit": {
+        "$displayName": "Product Create Or Edit",
+        "$entitySetDisplayName": "Product Create Or Edit",
+        "Product": "Product",
+        "$views": {}
+    },
+    "ProductDetails": {
+        "$displayName": "Product Details",
+        "$entitySetDisplayName": "Product Details",
+        "Product": "Product",
+        "$views": {}
+    },
+    "ProductCategoryIndex": {
+        "$displayName": "Product Category Index",
+        "$entitySetDisplayName": "Product Category Index",
+        "ProductCategories": "Product Categories",
+        "$views": {}
+    },
+    "ProductCategoryCreateOrEdit": {
+        "$displayName": "Product Category Create Or Edit",
+        "$entitySetDisplayName": "Product Category Create Or Edit",
+        "ProductCategory": "Product Category",
+        "$views": {}
+    },
+    "ProductCategoryDetails": {
+        "$displayName": "Product Category Details",
+        "$entitySetDisplayName": "Product Category Details",
+        "ProductCategory": "Product Category",
+        "$views": {}
+    },
+    "AddressIndex": {
+        "$displayName": "Address Index",
+        "$entitySetDisplayName": "Address Index",
+        "Addresses": "Addresses",
+        "$views": {}
+    },
+    "AddressCreateOrEdit": {
+        "$displayName": "Address Create Or Edit",
+        "$entitySetDisplayName": "Address Create Or Edit",
+        "Address": "Address",
+        "$views": {}
+    },
+    "AddressDetails": {
+        "$displayName": "Address Details",
+        "$entitySetDisplayName": "Address Details",
+        "Address": "Address",
+        "$views": {}
+    },
+    "TagIndex": {
+        "$displayName": "Tag Index",
+        "$entitySetDisplayName": "Tag Index",
+        "Tags": "Tags",
+        "$views": {}
+    },
+    "TagCreateOrEdit": {
+        "$displayName": "Tag Create Or Edit",
+        "$entitySetDisplayName": "Tag Create Or Edit",
+        "Tag": "Tag",
+        "$views": {}
+    },
+    "TagDetails": {
+        "$displayName": "Tag Details",
+        "$entitySetDisplayName": "Tag Details",
+        "Tag": "Tag",
+        "$views": {}
+    }
+}

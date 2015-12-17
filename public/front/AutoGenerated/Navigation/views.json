@@ -1,0 +1,233 @@
+[
+  {
+    "Id": 1037,
+    "EntityId": 1,
+    "EntityName": "Order",
+    "EntitySetName": "Orders",
+    "ViewModelName": "OrderIndex",
+    "Name": "Index",
+    "Title": "Orders",
+    "Description": "List of 'Orders'",
+    "Type": 1
+  },
+  {
+    "Id": 1038,
+    "EntityId": 1,
+    "EntityName": "Order",
+    "EntitySetName": "Orders",
+    "ViewModelName": "OrderCreateOrEdit",
+    "Name": "CreateOrEdit",
+    "Title": "Order",
+    "Description": "Create or Edit a 'Order'",
+    "Type": 2
+  },
+  {
+    "Id": 1039,
+    "EntityId": 1,
+    "EntityName": "Order",
+    "EntitySetName": "Orders",
+    "ViewModelName": "OrderDetails",
+    "Name": "Details",
+    "Title": "Order",
+    "Description": "Details of 'Order'",
+    "Type": 4
+  },
+  {
+    "Id": 1040,
+    "EntityId": 2,
+    "EntityName": "OrderDetail",
+    "EntitySetName": "OrderDetails",
+    "ViewModelName": "OrderDetailIndex",
+    "Name": "Index",
+    "Title": "Order Details",
+    "Description": "List of 'Order Details'",
+    "Type": 1
+  },
+  {
+    "Id": 1041,
+    "EntityId": 2,
+    "EntityName": "OrderDetail",
+    "EntitySetName": "OrderDetails",
+    "ViewModelName": "OrderDetailCreateOrEdit",
+    "Name": "CreateOrEdit",
+    "Title": "Order Detail",
+    "Description": "Create or Edit a 'Order Detail'",
+    "Type": 2
+  },
+  {
+    "Id": 1042,
+    "EntityId": 2,
+    "EntityName": "OrderDetail",
+    "EntitySetName": "OrderDetails",
+    "ViewModelName": "OrderDetailDetails",
+    "Name": "Details",
+    "Title": "Order Detail",
+    "Description": "Details of 'Order Detail'",
+    "Type": 4
+  },
+  {
+    "Id": 1043,
+    "EntityId": 3,
+    "EntityName": "Customer",
+    "EntitySetName": "Customers",
+    "ViewModelName": "CustomerIndex",
+    "Name": "Index",
+    "Title": "Customers",
+    "Description": "List of 'Customers'",
+    "Type": 1
+  },
+  {
+    "Id": 1044,
+    "EntityId": 3,
+    "EntityName": "Customer",
+    "EntitySetName": "Customers",
+    "ViewModelName": "CustomerCreateOrEdit",
+    "Name": "CreateOrEdit",
+    "Title": "Customer",
+    "Description": "Create or Edit a 'Customer'",
+    "Type": 2
+  },
+  {
+    "Id": 1045,
+    "EntityId": 3,
+    "EntityName": "Customer",
+    "EntitySetName": "Customers",
+    "ViewModelName": "CustomerDetails",
+    "Name": "Details",
+    "Title": "Customer",
+    "Description": "Details of 'Customer'",
+    "Type": 4
+  },
+  {
+    "Id": 1046,
+    "EntityId": 4,
+    "EntityName": "Product",
+    "EntitySetName": "Products",
+    "ViewModelName": "ProductIndex",
+    "Name": "Index",
+    "Title": "Products",
+    "Description": "List of 'Products'",
+    "Type": 1
+  },
+  {
+    "Id": 1047,
+    "EntityId": 4,
+    "EntityName": "Product",
+    "EntitySetName": "Products",
+    "ViewModelName": "ProductCreateOrEdit",
+    "Name": "CreateOrEdit",
+    "Title": "Product",
+    "Description": "Create or Edit a 'Product'",
+    "Type": 2
+  },
+  {
+    "Id": 1048,
+    "EntityId": 4,
+    "EntityName": "Product",
+    "EntitySetName": "Products",
+    "ViewModelName": "ProductDetails",
+    "Name": "Details",
+    "Title": "Product",
+    "Description": "Details of 'Product'",
+    "Type": 4
+  },
+  {
+    "Id": 1049,
+    "EntityId": 5,
+    "EntityName": "ProductCategory",
+    "EntitySetName": "ProductCategories",
+    "ViewModelName": "ProductCategoryIndex",
+    "Name": "Index",
+    "Title": "Product Categories",
+    "Description": "List of 'Product Categories'",
+    "Type": 1
+  },
+  {
+    "Id": 1050,
+    "EntityId": 5,
+    "EntityName": "ProductCategory",
+    "EntitySetName": "ProductCategories",
+    "ViewModelName": "ProductCategoryCreateOrEdit",
+    "Name": "CreateOrEdit",
+    "Title": "Product Category",
+    "Description": "Create or Edit a 'Product Category'",
+    "Type": 2
+  },
+  {
+    "Id": 1051,
+    "EntityId": 5,
+    "EntityName": "ProductCategory",
+    "EntitySetName": "ProductCategories",
+    "ViewModelName": "ProductCategoryDetails",
+    "Name": "Details",
+    "Title": "Product Category",
+    "Description": "Details of 'Product Category'",
+    "Type": 4
+  },
+  {
+    "Id": 1052,
+    "EntityId": 6,
+    "EntityName": "Address",
+    "EntitySetName": "Addresses",
+    "ViewModelName": "AddressIndex",
+    "Name": "Index",
+    "Title": "Addresses",
+    "Description": "List of 'Addresses'",
+    "Type": 1
+  },
+  {
+    "Id": 1053,
+    "EntityId": 6,
+    "EntityName": "Address",
+    "EntitySetName": "Addresses",
+    "ViewModelName": "AddressCreateOrEdit",
+    "Name": "CreateOrEdit",
+    "Title": "Address",
+    "Description": "Create or Edit a 'Address'",
+    "Type": 2
+  },
+  {
+    "Id": 1054,
+    "EntityId": 6,
+    "EntityName": "Address",
+    "EntitySetName": "Addresses",
+    "ViewModelName": "AddressDetails",
+    "Name": "Details",
+    "Title": "Address",
+    "Description": "Details of 'Address'",
+    "Type": 4
+  },
+  {
+    "Id": 1055,
+    "EntityId": 7,
+    "EntityName": "Tag",
+    "EntitySetName": "Tags",
+    "ViewModelName": "TagIndex",
+    "Name": "Index",
+    "Title": "Tags",
+    "Description": "List of 'Tags'",
+    "Type": 1
+  },
+  {
+    "Id": 1056,
+    "EntityId": 7,
+    "EntityName": "Tag",
+    "EntitySetName": "Tags",
+    "ViewModelName": "TagCreateOrEdit",
+    "Name": "CreateOrEdit",
+    "Title": "Tag",
+    "Description": "Create or Edit a 'Tag'",
+    "Type": 2
+  },
+  {
+    "Id": 1057,
+    "EntityId": 7,
+    "EntityName": "Tag",
+    "EntitySetName": "Tags",
+    "ViewModelName": "TagDetails",
+    "Name": "Details",
+    "Title": "Tag",
+    "Description": "Details of 'Tag'",
+    "Type": 4
+  }
+]

@@ -1,0 +1,59 @@
+﻿<div class="product-filter">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="display">
+                <a href ng-class="{'active': (layout=='list')}" ng-click="changeLayout('list')"><i class="fa fa-th-list" title="" data-original-title="List View"></i></a>
+                <a href ng-class="{'active': (layout=='grid')}" ng-click="changeLayout('grid')"><i class="fa fa-th" title="" data-original-title="Grid View"></i> </a>
+            </div>
+        </div>
+        <div class="col-md-3 text-right">
+            <label class="control-label">Sort</label>
+        </div>
+        <div class="col-md-3 text-right">
+            <select class="form-control" ng-model="sortOption" ng-options="item.title for item in sortOptions" ng-change="changeSorting()">
+            </select>
+        </div>
+        <div class="col-md-1 text-right">
+            <label class="control-label" for="input-limit">Show</label>
+        </div>
+        <div class="col-md-1 text-right">
+            <div class="pull-right pagination display">
+                <!--<span>{{service.pager.totalRecords}} records found</span> <span>{{service.pager.totalPages}} pages found</span> <span style="padding-left:20px; padding-right:5px;">Show </span>-->
+                <select ng-model="service.pager.page_size" ng-change="service.pageSizeChanged()" ng-options="o for o in service.pager.page_sizes"></select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="" ng-class="{'col-md-4 col-sm-6': layout=='grid','col-xs-12': layout=='list'}" ng-repeat="item in service.items">
+        <div class="product-col " ng-class="{'list clearfix': layout=='list'}">
+            <div class="image">
+                <a ui-sref="product({productId:item.id})">
+                    <img ng-src="images/{{item.image}}" alt="{{item.name}}" title="{{item.name}}" class="img-responsive">
+                </a>
+            </div>
+            <div class="caption">
+                <h4><a ui-sref="product({productId:item.id})" ng-bind-html="item.name"></a></h4>
+
+                <div class="description" ng-bind-html="item.description |  limitTo : 100"></div>
+                <div class="price">
+                    <span class="price-new">{{app.formatPrice(item.price_including_tax)}}</span> <span class="price-old">{{app.formatPrice(item.price_excluding_tax)}}</span>
+                </div>
+                <div class="cart-button button-group">
+                    <button type="button" class="btn btn-wishlist"  ng-click="app.wishlist.add(item);"><i class="fa fa-heart"></i></button>
+                    <button type="button"  class="btn btn-compare" ng-click="app.comparison.add(item);"><i class="fa fa-bar-chart-o"></i></button>
+                    <button type="button" class="btn btn-cart" ng-click="app.shoppingCart.add(item);">Add to cart <i class="fa fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-filter clearfix">
+    <div id="pager" class="pull-right">
+        <pagination boundary-links="true" total-items="service.pager.total_records" items-per-page="service.pager.page_size" max-size="service.pager.page_slide" rotate="false" ng-model="service.pager.page_index" ng-change="service.pageChanged(true)" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+
+    </div>
+</div>
+

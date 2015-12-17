@@ -1,0 +1,108 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <div class="panel panel-smart">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Login</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="alert {{notification.alertType('login')}}" ng-show="notification.isVisible('login')">
+                        <button type="button" class="close" ng-click="notification.hide('login')">&times;</button>
+                        <h4 ng-bind="notification.header('login')"></h4>
+                        <ul>
+                            <li ng-repeat="msg in notification.messages('login')" ng-bind="msg"></li>
+                        </ul>
+                    </div>
+
+                    <p>Please login using your existing account </p>
+
+                    <form name="loginForm" role="form" novalidate ng-submit="login()">
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="control-label control-label-required">Email</label>
+                                <input type="email" class="form-control" placeholder="Email" name="email" ng-model="credentials.email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-required">Password</label>
+                                <input type="password" class="form-control" placeholder="Password" name="password" ng-model="credentials.password" required>
+                            </div>
+                            <!--
+                            <span class="button-checkbox">
+                                <button type="button" class="btn" data-color="info">Remember Me</button>
+                                <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
+                                <a href="" class="btn btn-link pull-right">Forgot Password?</a>
+                            </span>
+                            -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-block btn-lg btn-success">Sign In</button>
+                                <!--
+                                <button type="button" class="btn btn-block btn-success" ng-click="alert()">1</button>
+                                <button type="button" class="btn btn-block btn-success" ng-click="test(1)">1</button>
+                                <button type="button" class="btn btn-block btn-success" ng-click="test(2)">2</button>
+                                <button type="button" class="btn btn-block btn-success" ng-click="test(3)">3</button>
+                                -->
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <div class="panel panel-smart">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Create new account</h3>
+                </div>
+                <div class="panel-body">
+
+                    <p>Please fill the information to create new account </p>
+
+                    <div class="alert {{notification.alertType('register')}}" ng-show="notification.isVisible('register')">
+                        <button type="button" class="close" ng-click="notification.hide('register')">&times;</button>
+                        <h4 ng-bind="notification.header('register')"></h4>
+                        <ul>
+                            <li ng-repeat="msg in notification.messages('register')" ng-bind="msg"></li>
+                        </ul>
+                    </div>
+
+                    <form name="registerForm" class1="form-horizontal" role="form" ng-submit="register()" novalidate autocomplete="off">
+                        <div class="form-group">
+                            <label class="control-label control-label-required">First Name</label>
+                            <input type="text" class="form-control" placeholder="First Name" name="first_name" ng-model="customer.first_name">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-required">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last Name" name="last_name" ng-model="customer.last_name">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-required">Email</label>
+                            <input type="email" class="form-control" placeholder="Email" autocomplete="off" name="email" ng-model="customer.email" >
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label  control-label-required">Password</label>
+                            <input type="text" class="form-control" placeholder="Password" autocomplete="off" name="password" ng-model="customer.password">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label  control-label-required">Re-Password</label>
+                            <input type="text" class="form-control" placeholder="Re-Password" autocomplete="off" name="password_confirmation" ng-model="customer.password_confirmation">
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="newsletter"  ng-model="customer.newsletter" >Subscribe to our newsletter</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-block btn-primary" ng-click="fillSampleCustomer()">Fill Sample Customer</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-block btn-primary">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

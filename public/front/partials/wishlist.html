@@ -1,0 +1,36 @@
+﻿<div class="container">
+    <h2 class="main-heading text-center">Wishlist</h2>
+
+    <div ng-if="app.wishlist.items.length===0">
+        <div class="alert alert-info" role="alert">
+            <h6>No products in wishlist</h6>
+        </div>
+        <a ui-sref="home" class="btn btn-primary">Continue shopping</a>
+    </div>
+
+    <div class="table-responsive shopping-cart-table" ng-if="app.wishlist.items.length>0">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in app.wishlist.items">
+                    <td class="text-center">
+                        <a ui-sref="product({productId:item.id})"> <img ng-src="images/{{item.product.image}}" alt="{{item.product.name}}" title="{{item.product.name}}" class="img-responsive img-thumbnail img-sm"> </a>
+                    </td>
+                    <td>{{item.product.name}}</td>
+                    <td>{{app.formatPrice(item.product.price_including_tax)}}</td>
+                    <td>
+                        <button class="btn btn-success btn-sm" ng-click="app.shoppingCart.add(item.product); app.wishlist.remove(item.product);"><i class="fa fa-plus"></i> Add to Cart</button>
+                        <button class="btn btn-danger btn-sm" ng-click="app.wishlist.remove(item.product);"><i class="fa fa-remove"></i> Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

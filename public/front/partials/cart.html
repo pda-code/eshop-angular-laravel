@@ -1,0 +1,66 @@
+﻿<div class="container">
+    <h2 class="main-heading text-center">Shopping Cart</h2>
+
+    <div ng-if="app.shoppingCart.items.length==0">
+        <div class="alert alert-info" role="alert">
+            <h6>No products in cart</h6>
+        </div>
+        <a ui-sref="home" class="btn btn-primary">Continue shopping</a>
+    </div>
+
+    <div ng-if="app.shoppingCart.items.length>0">
+        <table class="table table-bordered table-responsive shopping-cart-table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th class="text-center">Quantity</th>
+                <th class="text-right">Tax</th>
+                <th class="text-right">Total</th>
+                <th></th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr ng-repeat="item in app.shoppingCart.items">
+
+                <td class="text-center">
+                    <img ng-src="images/{{item.product.image}}" alt="{{item.product.name}}" title="{{item.product.name}}" class="img-responsive img-thumbnail img-sm">
+                </td>
+                <td><a ui-sref="product({productId:item.product.id})">
+                        {{item.product.name}} {{item.product.model}}
+                    </a>
+                </td>
+                <td class="text-center">
+                    <div style="max-width: 100px">
+                     <input type="text" class="form-control" name="quantity" ng-model="item.tmpQuantity" size="1"/>
+                    </div>
+                </td>
+                <td class="text-right">{{app.formatPrice(item.getTax())}}</td>
+                <td class="text-right">{{app.formatPrice(item.getTotalIncludingTax())}}</td>
+                <td><button class="btn btn-danger" ng-click="app.shoppingCart.remove(item.product);"><i class="fa fa-remove"></i></button></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr ng-repeat="item in app.shoppingCart.totals">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-right">{{item.title}}</td>
+                <td class="text-right">{{app.formatPrice(item.value)}}</td>
+                <td></td>
+            </tr>
+            </tfoot>
+        </table>
+        <p></p>
+        <p>
+            <a ui-sref="home" class="btn btn-primary pull-left">Continue shopping</a>
+            <div class="pull-right">
+            <button class="btn btn-success" ng-click="updateCart()">Re-Calculate cart</button>
+            <button class="btn btn-success" ng-click="checkout()">Checkout <i class="fa fa-arrow-right"></i></button>
+            </div>
+        </p>
+    </div>
+
+
+</div>

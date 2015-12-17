@@ -1,0 +1,260 @@
+﻿<div class="container">
+    <h2 class="main-heading text-center">{{steps[step].title}}</h2>
+
+    <div ng-if="app.shoppingCart.items.length==0">
+        <div class="alert alert-info" role="alert">
+            <h6>No products in cart</h6>
+        </div>
+        <a ui-sref="home" class="btn btn-primary">Continue shopping</a>
+    </div>
+
+    <div ng-if="app.shoppingCart.items.length>0">
+        <!--<button ng-click="getCheckoutOrder()" class="btn btn-default">get</button>-->
+        <div class="wizard-steps">
+            <div class="wstep" ng-class="{active: step=='personal'}">
+                <a href ng-click="gotoStep('personal')">
+                    <div class="donut"><i class="fa fa-user"></i></div>
+                    <span class="txt">Personal information</span> </a>
+            </div>
+            <div class="wstep" ng-class="{active: step=='shipping'}">
+                <a href ng-click="gotoStep('shipping')">
+                    <div class="donut"><i class="fa fa-truck"></i></div>
+                    <span class="txt">Shipping</span> </a>
+            </div>
+            <div class="wstep" ng-class="{active: step=='payment'}">
+                <a href ng-click="gotoStep('payment')">
+                    <div class="donut"><i class="fa fa-money"></i></div>
+                    <span class="txt">Payment</span> </a>
+            </div>
+            <div class="wstep last-child" ng-class="{active: step=='confirm'}">
+                <a href ng-click="gotoStep('confirm')">
+                    <div class="donut"><i class="fa fa-thumbs-up"></i></div>
+                    <span class="txt">Confirm Order</span> </a>
+            </div>
+        </div>
+
+        <div class="alert {{notification.alertType('checkout')}}" ng-show="notification.isVisible('checkout')">
+            <button type="button" class="close" ng-click="notification.hide('checkout')">&times;</button>
+            <h4 ng-bind="notification.header('checkout')"></h4>
+            <ul>
+                <li ng-repeat="msg in notification.messages('checkout')" ng-bind="msg"></li>
+            </ul>
+        </div>
+
+        <section ng-show="step=='personal'">
+            <div class="panel panel-smart">
+                <div class="panel-heading"><h3 class="panel-title">Personal Information</h3></div>
+                <div class="panel-body">
+                    <p>Please enter your personal information</p>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="control-label control-label-required">First Name</label> <input type="text" class="form-control" placeholder="First Name" name="customer_first_name" ng-model="order.customer_first_name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="control-label control-label-required">Last Name</label> <input type="text" class="form-control" placeholder="Last Name" name="customer_last_name" ng-model="order.customer_last_name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="control-label control-label-required">Email</label> <input type="text" class="form-control" placeholder="Email" name="customer_email" ng-model="order.customer_email">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="control-label control-label-required">Phone</label> <input type="text" class="form-control" placeholder="Phone" name="customer_phone" ng-model="order.customer_phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-block btn-primary" ng-click="fillSampleCustomer()">Fill Sample Customer</button>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-smart">
+                        <div class="panel-heading"><h3 class="panel-title">Billing Address</h3></div>
+                        <div class="panel-body">
+                            <p>Please enter your billing address</p>
+
+                            <div class="form-group">
+                                <label class="control-label">Select from existing address</label> <select class="form-control" ng-model="order.default_address" ng-options="item as item.address_1 for item in addresses" ng-change="defaultAddressChanged('billing')"> </select>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="control-label control-label-required">First Name</label> <input type="text" class="form-control" placeholder="First Name" name="billing_address_first_name" ng-model="order.billing_address_first_name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label control-label-required">Last Name</label> <input type="text" class="form-control" placeholder="Last Name" name="billing_address_last_name" ng-model="order.billing_address_last_name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Company</label> <input type="text" class="form-control" placeholder="Company" name="billing_address_company" ng-model="order.billing_address_company">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-required">Address/1</label> <input type="text" class="form-control" placeholder="Address/1" name="billing_address_address_1" ng-model="order.billing_address_address_1">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Address/2</label> <input type="text" class="form-control" placeholder="Address/2" name="billing_address_address_2" ng-model="order.billing_address_address_2">
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="control-label">City</label> <input type="text" class="form-control" placeholder="City" name="billing_address_city" ng-model="order.billing_address_city">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Postal Code</label> <input type="text" class="form-control" placeholder="Postal Code" name="billing_address_postal_code" ng-model="order.billing_address_postal_code">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Country</label> <select class="form-control" name="billing_address_country_id" ng-model="order.billing_address_country_id" ng-change1="getZones()" ng-options="item.id as item.name for item in addressService.countries"> </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Zone</label> <select class="form-control" name="billing_address_zone_id" ng-model="order.billing_address_zone_id" ng-options="item.id as item.name for item in addressService.zones"> </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-block btn-primary" ng-click="fillSampleAddress()">Fill Sample Address</button>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-smart">
+                        <div class="panel-heading"><h3 class="panel-title">Shipping Address</h3></div>
+                        <div class="panel-body">
+                            <p>Please enter your shipping address</p>
+                            <label><input type="checkbox" name="shipping_address_same_as_billing_address" ng-model="order.shipping_address_same_as_billing_address"/> Same as billing address</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section ng-show="step=='shipping'">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-smart">
+                        <div class="panel-heading"><h3 class="panel-title">Shipping Method</h3></div>
+                        <div class="panel-body">
+                            <p>Please select your shipping method </p>
+
+                            <div class="radio" ng-repeat="item in shipping_methods">
+                                <label><input type="radio" name="shipping_method" ng-model="order.shipping_method" ng-value="item.name"> {{item.name}} - {{app.formatPrice(item.rate)}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section ng-show="step=='payment'">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-smart">
+                        <div class="panel-heading"><h3 class="panel-title">Payment Method</h3></div>
+                        <div class="panel-body">
+                            <p>Please select your payment method </p>
+
+                            <div class="radio" ng-repeat="item in payment_methods">
+                                <label><input type="radio" name="payment_method" ng-model="order.payment_method" ng-value="item.name"> {{item.name}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section ng-show="step=='confirm'">
+            <div class="panel panel-smart">
+                <div class="panel-heading"><h3 class="panel-title">Confirm Order</h3></div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Billing Address</h4>
+
+                            <div ng-bind-html="addressService.formatAddress(getAddress('billing'))"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Shipping Address</h4>
+
+                            <div ng-bind-html="addressService.formatAddress(getAddress('shipping'))"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Shipping Method</h4>
+
+                            <div ng-bind-html="order.shipping_method"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Payment Method</h4>
+
+                            <div ng-bind-html="order.payment_method"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Products</h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Product</th>
+                                    <th>Tax</th>
+                                    <th class="text-right">Total</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+
+                                <tr ng-repeat="item in app.shoppingCart.items">
+                                    <td class="text-center">
+                                        <img ng-src="images/{{item.product.image}}" alt="{{item.product.name}}" title="{{item.product.name}}" class="img-responsive img-thumbnail img-sm">
+                                    </td>
+                                    <td><strong>{{item.quantity}} x </strong>{{item.product.name}}</td>
+                                    <td class="text-right">{{app.formatPrice(item.getTax())}}</td>
+                                    <td class="text-right">{{app.formatPrice(item.getTotalIncludingTax())}}</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr ng-repeat="item in app.shoppingCart.totals">
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-right">{{item.title}}</td>
+                                    <td class="text-right">{{app.formatPrice(item.value)}}</td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="btn btn-default btn-primary pull-right" ng-click="checkout()">Checkout <i class="fa fa-arrow-right"></i></button>
+    </div>
+</div>

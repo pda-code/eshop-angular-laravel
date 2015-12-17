@@ -1,0 +1,201 @@
+<div class="container">
+<h2 class="main-heading text-center">
+    Register <br> <span>Create New Account</span>
+</h2>
+<section class="registration-area">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-smart">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Personal Information</h3>
+                </div>
+                <div class="panel-body">
+                    <form name="myForm" class="form-horizontal" role="form" ng-submit="register()" novalidate>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label control-label-required">First Name</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="First Name" ng-model="customer.first_name" ng-minlength="3" ng-maxlength="32" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label control-label-required">Last Name</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="Last Name" ng-model="customer.last_name" ng-minlength="3" ng-maxlength="32" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label control-label-required">Email</label>
+
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" placeholder="Email" ng-model="customer.email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label control-label-required">Phone</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="Phone" ng-model="customer.phone" required>
+                            </div>
+                        </div>
+                        <!-- Personal Information Ends -->
+                        <h3 class="panel-heading inner">
+                            Delivery Information </h3>
+                        <!-- Delivery Information Starts -->
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Company :</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="Company" ng-model="address.company">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Address/1 :</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="Address/1" ng-model="address.address_1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Address/2 :</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="Address/2" ng-model="address.address_2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">City :</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="City" ng-model="address.city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Postal Code :</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="Postal Code" ng-model="address.postal_code">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Country :</label>
+
+                            <div class="col-sm-9">
+                                <select class="form-control" ng-model="address.country_id">
+                                    <option value="India">India</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="China">China</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Region :</label>
+
+                            <div class="col-sm-9">
+                                <select class="form-control" ng-model="address.zone_id">
+                                    <option value="Zone1">Zone1</option>
+                                    <option value="Zone2">Zone2</option>
+                                    <option value="Zone3">Zone3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Delivery Information Ends -->
+                        <h3 class="panel-heading inner">
+                            Password </h3>
+                        <!-- Password Area Starts -->
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Password :</label>
+
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" placeholder="Password" ng-model="customer.password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputRePassword" class="col-sm-3 control-label">Re-Password :</label>
+
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" placeholder="Re-Password" ng-model="customer.confirm_password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-sm-3 control-label">Newsletter :</span>
+
+                            <div class="col-sm-9">
+                                <div class="radio">
+                                    <label> <input type="radio" name="optionsRadios" value="1" checked="" ng-model="customer.newsletter"> Subscribe </label>
+                                </div>
+                                <div class="radio">
+                                    <label> <input type="radio" name="optionsRadios" value="0"> Unsubscribe </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label> <input type="checkbox"> I'v read and agreed on Conditions </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-warning">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <!-- Guest Checkout Panel Starts -->
+            <div class="panel panel-smart">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Checkout as Guest </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Checkout as a guest instead! </p>
+                    <button class="btn btn-warning">As Guest</button>
+                </div>
+            </div>
+            <!-- Guest Checkout Panel Ends --><!-- Conditions Panel Starts -->
+            <div class="panel panel-smart">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Conditions </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Integer molestie lorem at massa</li>
+                        <li>Facilisis in pretium nisl aliquet</li>
+                        <li>Nulla volutpat aliquam velit</li>
+                        <li>Faucibus porta lacus fringilla vel</li>
+                        <li>Aenean sit amet erat nunc</li>
+                        <li>Eget porttitor lorem</li>
+                    </ol>
+                    <p>
+                        HTML Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. </p>
+
+                    <p>
+                        Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. </p>
+
+                    <p>
+                        Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. </p>
+
+                    <p>
+                        Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst. </p>
+                </div>
+            </div>
+            <!-- Conditions Panel Ends -->
+        </div>
+    </div>
+</section>
+</div>

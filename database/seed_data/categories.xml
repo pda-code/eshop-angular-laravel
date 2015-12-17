@@ -1,0 +1,581 @@
+<categories>
+	<category code="01" title-el="Αξεσουάρ Κινητής" title-en="Mobile Accessories">
+		<category code="0107" title-el="Bluetooth" title-en="Bluetooth">
+			<category code="010701" title-el="Headsets" title-en="Headsets"/>
+		</category>
+		<category code="0108" title-el="Κάρτες Μνήμης" title-en="Memory Cards">
+			<category code="010805" title-el="Micro SD" title-en="Micro SD"/>
+			<category code="010809" title-el="SD" title-en="SD"/>
+			<category code="010806" title-el="Memory Stick M2" title-en="Memory Stick M2"/>
+			<category code="010803" title-el="Memory Stick Duo Pro" title-en="Memory Stick Duo Pro"/>
+			<category code="010801" title-el="MMC PLUS" title-en="MMC PLUS"/>
+			<category code="010808" title-el="Αντάπτορες" title-en="Adaptors"/>
+		</category>
+        <!--
+		<category code="0109" title-el="Ψηφιακή Τεχνολογία" title-en="Digital Technology">
+			<category code="010903" title-el="USB Flash Disks" title-en="USB Flash Disks"/>
+			<category code="010901" title-el="Card Readers" title-en="Card Readers"/>
+		</category>
+		<category code="0103" title-el="Φορτιστές" title-en="Chargers">
+			<category code="010308" title-el="Βάσεις Φόρτισης" title-en="Charge Base"/>
+			<category code="010301" title-el="Ταξιδίου" title-en="Travel Chargers"/>
+			<category code="010302" title-el="Αυτοκινήτου" title-en="Car Chargers"/>
+			<category code="010304" title-el="Περιέλιξης" title-en="Retractable Chargers"/>
+			<category code="010305" title-el="USB" title-en="USB Chargers"/>
+			<category code="010306" title-el="Ανάγκης" title-en="Emergency Chargers"/>
+			<category code="010303" title-el="Προσαρμογείς" title-en="Charger Adaptors"/>
+		</category>
+		<category code="0104" title-el="Hands Free" title-en="Hands Free">
+			<category code="010401" title-el="Μονά" title-en="Single"/>
+			<category code="010402" title-el="Στέρεο" title-en="Stereo"/>
+			<category code="010403" title-el="Προσαρμογείς" title-en="Adaptors"/>
+			<category code="010404" title-el="Mp3/Mp4" title-en="Mp3/Mp4"/>
+		</category>
+		<category code="0102" title-el="Μπαταρίες Κινητών" title-en="Mobile Batteries">
+			<category code="010211" title-el="Nokia" title-en="Nokia"/>
+			<category code="010218" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="010214" title-el="Samsung" title-en="Samsung"/>
+			<category code="010207" title-el="LG" title-en="LG"/>
+			<category code="010206" title-el="HTC" title-en="HTC"/>
+			<category code="010202" title-el="Apple" title-en="Apple"/>
+			<category code="010209" title-el="Motorola" title-en="Motorola"/>
+			<category code="010215" title-el="Sharp" title-en="Sharp"/>
+			<category code="010213" title-el="Sagem" title-en="Sagem"/>
+			<category code="010216" title-el="Siemens" title-en="Siemens"/>
+			<category code="010212" title-el="Panasonic" title-en="Panasonic"/>
+			<category code="010210" title-el="Nec" title-en="Nec"/>
+			<category code="010203" title-el="Benq-Siemens" title-en="Benq-Siemens"/>
+			<category code="010221" title-el="Universal για Tablets" title-en="Universal for Tablets"/>
+		</category>
+		<category code="0106" title-el="Θήκες" title-en="Cases">
+			<category code="010632" title-el="Trexta" title-en="Trexta"/>
+			<category code="010629" title-el="Gecko" title-en="Gecko"/>
+			<category code="010626" title-el="Shield" title-en="Shield"/>
+			<category code="010646" title-el="Melkco" title-en="Melkco"/>
+			<category code="010623" title-el="Body Glove" title-en="Body Glove"/>
+			<category code="010642" title-el="Goospery" title-en="Goospery"/>
+			<category code="010643" title-el="Stoneage" title-en="Stoneage"/>
+			<category code="010647" title-el="Anymode" title-en="Anymode"/>
+			<category code="010635" title-el="Face" title-en="Face"/>
+			<category code="010618" title-el="Aniline" title-en="Aniline"/>
+			<category code="010638" title-el="Xmart" title-en="Xmart"/>
+			<category code="010645" title-el="Flip Universal" title-en="Flip Universal"/>
+			<category code="010634" title-el="Flip Οριζόντια" title-en="Flip Horizontal"/>
+			<category code="010644" title-el="Flip Κάθετη" title-en="Flip Κάθετη"/>
+			<category code="010605" title-el="Silicon" title-en="Silicon"/>
+			<category code="010633" title-el="TPU" title-en="TPU"/>
+			<category code="010631" title-el="Bumper" title-en="Bumper"/>
+			<category code="010630" title-el="Faceplate" title-en="Faceplate"/>
+			<category code="010628" title-el="Uunique" title-en="Uunique"/>
+			<category code="010625" title-el="Route 66" title-en="Route 66"/>
+			<category code="010604" title-el="Croco" title-en="Croco"/>
+			<category code="010624" title-el="Ed Hardy" title-en="Ed Hardy"/>
+			<category code="010616" title-el="Animob" title-en="Animob"/>
+			<category code="010609" title-el="Crystal" title-en="Crystal"/>
+			<category code="010606" title-el="Sport" title-en="Sport"/>
+			<category code="010601" title-el="Zip" title-en="Zip"/>
+			<category code="010621" title-el="Κάμερας" title-en="Camera's"/>
+			<category code="010617" title-el="Αδιάβροχες" title-en="Waterproof"/>
+			<category code="010602" title-el="Οριζόντιες Nortonline" title-en="Horizontal Nortonline"/>
+			<category code="010622" title-el="Universal Nortonline" title-en="Universal Nortonline"/>
+		</category>
+		<category code="0118" title-el="Προστατευτικές Μεμβράνες" title-en="Screen Protectors">
+			<category code="011801" title-el="Διάφανες" title-en="Clear"/>
+			<category code="011802" title-el="Καθρέφτης" title-en="Mirror"/>
+			<category code="011803" title-el="Privacy" title-en="Privacy"/>
+			<category code="011804" title-el="Gecko" title-en="Gecko"/>
+			<category code="011805" title-el="Shield" title-en="Shield"/>
+			<category code="011806" title-el="Goospery" title-en="Goospery"/>
+			<category code="011807" title-el="Stoneage" title-en="Stoneage"/>
+			<category code="011810" title-el="Anymode" title-en="Anymode"/>
+			<category code="011808" title-el="Tempered Glass" title-en="Tempered Glass"/>
+			<category code="011811" title-el="Anti-Shock" title-en="Anti-Shock"/>
+			<category code="011809" title-el="Installation Tools" title-en="Installation Tools"/>
+		</category>
+		<category code="0120" title-el="Πενάκια Οθόνης" title-en="Lcd Pens">
+			<category code="012007" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="012010" title-el="Samsung" title-en="Samsung"/>
+			<category code="012002" title-el="LG" title-en="LG"/>
+			<category code="012001" title-el="HTC" title-en="HTC"/>
+			<category code="012009" title-el="Apple" title-en="Apple"/>
+			<category code="012004" title-el="Motorola" title-en="Motorola"/>
+			<category code="012008" title-el="Universal" title-en="Universal"/>
+		</category>
+		<category code="0110" title-el="Μουσική" title-en="Music">
+			<category code="011001" title-el="Φορητά Ηχεία" title-en="Portable Speakers"/>
+			<category code="011003" title-el="Προσαρμογείς" title-en="Speaker's Connectors"/>
+		</category>
+		<category code="0111" title-el="Καλώδια Σύνδεσης" title-en="Data Cables">
+			<category code="011101" title-el="USB" title-en="USB"/>
+			<category code="011104" title-el="Multimedia" title-en="Multimedia"/>
+			<category code="011103" title-el="RJ45" title-en="RJ45"/>
+			<category code="011105" title-el="Υπέρυθρες" title-en="Infrared"/>
+		</category>
+		<category code="0113" title-el="Βάσεις Στήριξης" title-en="Holders">
+			<category code="011301" title-el="Βάσεις Αυτοκινήτου" title-en="Car Holders"/>
+			<category code="011303" title-el="Βάσεις Ποδηλάτου" title-en="Bicycle Holders"/>
+			<category code="011302" title-el="Επιτραπέζιες Βάσεις" title-en="Desktop Holders"/>
+		</category>
+		<category code="0112" title-el="Mobile Straps" title-en="Mobile Straps">
+			<category code="011202" title-el="Flashing Straps" title-en="Flashing Straps"/>
+			<category code="011203" title-el="Flashing J-Straps" title-en="Flashing J-Straps"/>
+			<category code="011207" title-el="Straps Χεριού" title-en="Hand Straps"/>
+			<category code="011208" title-el="Straps Λαιμού" title-en="Neck Straps"/>
+			<category code="011209" title-el="Cartoon Straps" title-en="Cartoon Straps"/>
+			<category code="011201" title-el="Straps Κοσμημάτων" title-en="Jewellery Straps"/>
+			<category code="011210" title-el="Various Straps" title-en="Various Straps"/>
+			<category code="011205" title-el="Straps με Φακό" title-en="Torch Straps"/>
+			<category code="011204" title-el="Diamond Stickers" title-en="Diamond Stickers"/>
+			<category code="011206" title-el="Καθαριστικά Οθόνης" title-en="Lence Cleaners"/>
+		</category>
+		<category code="0116" title-el="Πακέτα Σύνδεσης" title-en="Prepaid Packs">
+			<category code="011607" title-el="Q Card" title-en="Q Card"/>
+			<category code="011601" title-el="Cosmote" title-en="Cosmote"/>
+			<category code="011602" title-el="Vodafone" title-en="Vodafone"/>
+			<category code="011603" title-el="Wind" title-en="Wind"/>
+		</category>
+		<category code="0121" title-el="Αντάπτορες" title-en="Adapters">
+			<category code="012101" title-el="Αντάπτορες Κάρτας SIM" title-en="SIM Card Adaptors"/>
+		</category>
+		<category code="0115" title-el="Dummy Phones" title-en="Dummy Phones">
+			<category code="011511" title-el="Nokia" title-en="Nokia"/>
+			<category code="011514" title-el="Samsung" title-en="Samsung"/>
+			<category code="011507" title-el="LG" title-en="LG"/>
+			<category code="011502" title-el="Apple" title-en="Apple"/>
+			<category code="011517" title-el="Sony" title-en="Sony"/>
+		</category>
+		<category code="0114" title-el="Stands" title-en="Stands">
+			<category code="011401" title-el="Επιτραπέζια" title-en="Desktop"/>
+			<category code="011402" title-el="Επιδαπέδια" title-en="Floor Stand"/>
+		</category>
+		-->
+	</category>
+    <!--
+	<category code="12" title-el="Γνήσια Αξεσουάρ" title-en="Original Accessories">
+		<category code="1206" title-el="Bluetooth" title-en="Bluetooth">
+			<category code="120603" title-el="Smart Watches" title-en="Smart Watches"/>
+			<category code="120601" title-el="Headsets" title-en="Headsets"/>
+			<category code="120602" title-el="Car Kits" title-en="Car Kits"/>
+		</category>
+		<category code="1202" title-el="Φορτιστές" title-en="Chargers">
+			<category code="120201" title-el="Ταξιδίου" title-en="Travel Chargers"/>
+			<category code="120202" title-el="Αυτοκινήτου" title-en="Car Chargers"/>
+			<category code="120203" title-el="Προσαρμογείς" title-en="Adaptors"/>
+			<category code="120204" title-el="Ανάγκης" title-en="Emergency Chargers"/>
+			<category code="120205" title-el="USB" title-en="USB"/>
+			<category code="120206" title-el="Βάσεις Φόρτισης" title-en="Charge Base"/>
+		</category>
+		<category code="1203" title-el="Hands Free" title-en="Hands Free">
+			<category code="120301" title-el="Μονά" title-en="Single"/>
+			<category code="120302" title-el="Στέρεο" title-en="Stereo"/>
+		</category>
+		<category code="1201" title-el="Μπαταρίες Κινητών" title-en="Mobile Batteries">
+			<category code="120110" title-el="Apple" title-en="Apple"/>
+			<category code="120111" title-el="Sony" title-en="Sony"/>
+			<category code="120112" title-el="Huawei" title-en="Huawei"/>
+			<category code="120113" title-el="Alcatel" title-en="Alcatel"/>
+			<category code="120114" title-el="Asus" title-en="Asus"/>
+			<category code="120102" title-el="Nokia" title-en="Nokia"/>
+			<category code="120105" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="120104" title-el="Samsung" title-en="Samsung"/>
+			<category code="120107" title-el="LG" title-en="LG"/>
+			<category code="120101" title-el="HTC" title-en="HTC"/>
+			<category code="120108" title-el="Motorola" title-en="Motorola"/>
+			<category code="120106" title-el="Blackberry" title-en="Blackberry"/>
+		</category>
+		<category code="1205" title-el="Θήκες" title-en="Cases">
+			<category code="120509" title-el="Apple" title-en="Apple"/>
+			<category code="120510" title-el="Sony" title-en="Sony"/>
+			<category code="120503" title-el="Nokia" title-en="Nokia"/>
+			<category code="120504" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="120508" title-el="Samsung" title-en="Samsung"/>
+			<category code="120502" title-el="LG" title-en="LG"/>
+			<category code="120501" title-el="HTC" title-en="HTC"/>
+			<category code="120505" title-el="Motorola" title-en="Motorola"/>
+			<category code="120507" title-el="Blackberry" title-en="Blackberry"/>
+		</category>
+		<category code="1213" title-el="Προστατευτικές Μεμβράνες" title-en="Screen Protectors">
+			<category code="121303" title-el="Nokia" title-en="Nokia"/>
+			<category code="121304" title-el="Samsung" title-en="Samsung"/>
+			<category code="121301" title-el="HTC" title-en="HTC"/>
+		</category>
+		<category code="1212" title-el="Πενάκια Οθόνης" title-en="LCD Pens">
+			<category code="121202" title-el="Nokia" title-en="Nokia"/>
+			<category code="121204" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="121203" title-el="Samsung" title-en="Samsung"/>
+			<category code="121207" title-el="LG" title-en="LG"/>
+			<category code="121201" title-el="HTC" title-en="HTC"/>
+		</category>
+		<category code="1207" title-el="Ήχος - Μουσική" title-en="Sound - Music">
+			<category code="120703" title-el="Μικρόφωνα" title-en="Microphone"/>
+			<category code="120701" title-el="Φορητά Ηχεία" title-en="Portable Speakers"/>
+		</category>
+		<category code="1209" title-el="Καλώδια Σύνδεσης" title-en="Data Cables">
+			<category code="120902" title-el="Nokia" title-en="Nokia"/>
+			<category code="120904" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="120906" title-el="Samsung" title-en="Samsung"/>
+			<category code="120907" title-el="LG" title-en="LG"/>
+			<category code="120905" title-el="HTC" title-en="HTC"/>
+			<category code="120908" title-el="Apple" title-en="Apple"/>
+			<category code="120901" title-el="Motorola" title-en="Motorola"/>
+			<category code="120909" title-el="Blackberry" title-en="Blackberry"/>
+		</category>
+		<category code="1208" title-el="Βάσεις Στήριξης" title-en="Holders">
+			<category code="120802" title-el="Nokia" title-en="Nokia"/>
+			<category code="120801" title-el="HTC" title-en="HTC"/>
+			<category code="120803" title-el="Samsung" title-en="Samsung"/>
+		</category>
+	</category>
+	<category code="06" title-el="Αξεσουάρ Η/Υ" title-en="PC Accessories">
+		<category code="0607" title-el="Φορτιστές" title-en="Laptop Chargers">
+			<category code="060701" title-el="Laptop" title-en="Laptop"/>
+		</category>
+		<category code="0602" title-el="Θήκες" title-en="Cases">
+			<category code="060210" title-el="Nokia" title-en="Nokia"/>
+			<category code="060211" title-el="Sony" title-en="Sony"/>
+			<category code="060202" title-el="Apple" title-en="Apple"/>
+			<category code="060203" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="060204" title-el="HTC" title-en="HTC"/>
+			<category code="060205" title-el="Samsung" title-en="Samsung"/>
+			<category code="060208" title-el="LG" title-en="LG"/>
+			<category code="060206" title-el="Universal" title-en="Universal"/>
+			<category code="060201" title-el="CD-DVD" title-en="CD-DVD"/>
+		</category>
+		<category code="0601" title-el="Προστατευτικές Μεμβράνες" title-en="Screen Protectors">
+			<category code="060109" title-el="Vodafone" title-en="Vodafone"/>
+			<category code="060110" title-el="Lenovo" title-en="Lenovo"/>
+			<category code="060111" title-el="Nokia" title-en="Nokia"/>
+			<category code="060112" title-el="Alcatel" title-en="Alcatel"/>
+			<category code="060101" title-el="Apple" title-en="Apple"/>
+			<category code="060103" title-el="Samsung" title-en="Samsung"/>
+			<category code="060108" title-el="Sony" title-en="Sony"/>
+			<category code="060104" title-el="LG" title-en="LG"/>
+			<category code="060105" title-el="Motorola" title-en="Motorola"/>
+			<category code="060107" title-el="Asus" title-en="Asus"/>
+			<category code="060106" title-el="Universal" title-en="Universal"/>
+		</category>
+		<category code="0608" title-el="Καλώδια Σύνδεσης" title-en="Data Cables">
+			<category code="060801" title-el="USB" title-en="USB"/>
+			<category code="060802" title-el="UTP" title-en="UTP"/>
+		</category>
+		<category code="0603" title-el="Αποθηκευτικά Μέσα" title-en="Media Storage">
+			<category code="060302" title-el="CD-DVD" title-en="CD-DVD"/>
+		</category>
+		<category code="0604" title-el="Internet" title-en="Internet">
+			<category code="060402" title-el="USB Internet Sticks" title-en="USB Internet Sticks"/>
+		</category>
+		<category code="0610" title-el="Ποντίκια / Πληκτρολόγια" title-en="Mouse / Keyboards">
+			<category code="061001" title-el="Ασύρματα" title-en="Wireless"/>
+			<category code="061002" title-el="Ενσύρματα" title-en="Wired"/>
+		</category>
+		<category code="0613" title-el="Κάρτες Δικτύου" title-en="Network Cards">
+			<category code="061301" title-el="Ασύρματες" title-en="Wireless"/>
+		</category>
+	</category>
+	<category code="03" title-el="Ανταλλακτικά" title-en="Spare Parts">
+		<category code="0301" title-el="Οθόνες" title-en="Lcds">
+			<category code="030124" title-el="Dell" title-en="Dell"/>
+			<category code="030125" title-el="Lenovo" title-en="Lenovo"/>
+			<category code="030111" title-el="Nokia" title-en="Nokia"/>
+			<category code="030118" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="030114" title-el="Samsung" title-en="Samsung"/>
+			<category code="030107" title-el="LG" title-en="LG"/>
+			<category code="030106" title-el="HTC" title-en="HTC"/>
+			<category code="030102" title-el="Apple" title-en="Apple"/>
+			<category code="030109" title-el="Motorola" title-en="Motorola"/>
+			<category code="030104" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="030115" title-el="Sharp" title-en="Sharp"/>
+			<category code="030113" title-el="Sagem" title-en="Sagem"/>
+			<category code="030101" title-el="Alcatel" title-en="Alcatel"/>
+			<category code="030103" title-el="Benq-Siemens" title-en="Benq-Siemens"/>
+			<category code="030112" title-el="Panasonic" title-en="Panasonic"/>
+			<category code="030117" title-el="Sony" title-en="Sony"/>
+			<category code="030119" title-el="Vodafone" title-en="Vodafone"/>
+			<category code="030120" title-el="Huawei" title-en="Huawei"/>
+			<category code="030121" title-el="ZTE" title-en="ZTE"/>
+			<category code="030122" title-el="Asus" title-en="Asus"/>
+			<category code="030123" title-el="Universal για Tablet" title-en="Universal για Tablet"/>
+		</category>
+		<category code="0327" title-el="Μηχανισμοί Αφής" title-en="Touch Screen">
+			<category code="032707" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="032708" title-el="Motorola" title-en="Motorola"/>
+			<category code="032709" title-el="Alcatel" title-en="Alcatel"/>
+			<category code="032710" title-el="Vodafone" title-en="Vodafone"/>
+			<category code="032711" title-el="ZTE" title-en="ZTE"/>
+			<category code="032712" title-el="Huawei" title-en="Huawei"/>
+			<category code="032713" title-el="Sony" title-en="Sony"/>
+			<category code="032714" title-el="Lenovo" title-en="Lenovo"/>
+			<category code="032704" title-el="Nokia" title-en="Nokia"/>
+			<category code="032706" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="032705" title-el="Samsung" title-en="Samsung"/>
+			<category code="032703" title-el="LG" title-en="LG"/>
+			<category code="032701" title-el="Apple" title-en="Apple"/>
+			<category code="032702" title-el="HTC" title-en="HTC"/>
+			<category code="032715" title-el="Universal για Tablet" title-en="Universal for Tablet"/>
+		</category>
+		<category code="0304" title-el="Καλώδια Πλακέ" title-en="Flex Cables">
+			<category code="030411" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="030412" title-el="HTC" title-en="HTC"/>
+			<category code="030413" title-el="Sony" title-en="Sony"/>
+			<category code="030407" title-el="Nokia" title-en="Nokia"/>
+			<category code="030408" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="030409" title-el="Samsung" title-en="Samsung"/>
+			<category code="030402" title-el="LG" title-en="LG"/>
+			<category code="030410" title-el="Apple" title-en="Apple"/>
+			<category code="030406" title-el="Motorola" title-en="Motorola"/>
+			<category code="030404" title-el="Sharp" title-en="Sharp"/>
+			<category code="030401" title-el="Alcatel" title-en="Alcatel"/>
+			<category code="030403" title-el="Panasonic" title-en="Panasonic"/>
+			<category code="030405" title-el="Siemens" title-en="Siemens"/>
+		</category>
+		<category code="0325" title-el="Προσόψεις" title-en="Covers">
+			<category code="032511" title-el="Nokia" title-en="Nokia"/>
+			<category code="032518" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="032514" title-el="Samsung" title-en="Samsung"/>
+			<category code="032507" title-el="LG" title-en="LG"/>
+			<category code="032506" title-el="HTC" title-en="HTC"/>
+			<category code="032502" title-el="Apple" title-en="Apple"/>
+			<category code="032509" title-el="Motorola" title-en="Motorola"/>
+			<category code="032504" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="032515" title-el="Sharp" title-en="Sharp"/>
+			<category code="032513" title-el="Sagem" title-en="Sagem"/>
+			<category code="032517" title-el="Sony" title-en="Sony"/>
+		</category>
+		<category code="0322" title-el="Πληκτρολόγια" title-en="Keypads">
+			<category code="032211" title-el="Nokia" title-en="Nokia"/>
+			<category code="032218" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="032214" title-el="Samsung" title-en="Samsung"/>
+			<category code="032202" title-el="Apple" title-en="Apple"/>
+			<category code="032209" title-el="Motorola" title-en="Motorola"/>
+			<category code="032204" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="032215" title-el="Sharp" title-en="Sharp"/>
+			<category code="032213" title-el="Sagem" title-en="Sagem"/>
+			<category code="032216" title-el="Siemens" title-en="Siemens"/>
+		</category>
+		<category code="0309" title-el="Πλακέτες Πληκτρολογίου" title-en="Keyboards">
+			<category code="030903" title-el="BlackBerry" title-en="BlackBerry"/>
+			<category code="030904" title-el="HTC" title-en="HTC"/>
+			<category code="030905" title-el="Apple" title-en="Apple"/>
+			<category code="030906" title-el="Samsung" title-en="Samsung"/>
+			<category code="030901" title-el="Nokia" title-en="Nokia"/>
+			<category code="030902" title-el="Sony Ericsson" title-en="Sonny Ericsson"/>
+		</category>
+		<category code="0305" title-el="Ακουστικά" title-en="Receivers">
+			<category code="030511" title-el="HTC" title-en="HTC"/>
+			<category code="030512" title-el="Sony" title-en="Sony"/>
+			<category code="030501" title-el="Nokia" title-en="Nokia"/>
+			<category code="030502" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="030503" title-el="Samsung" title-en="Samsung"/>
+			<category code="030510" title-el="LG" title-en="LG"/>
+			<category code="030509" title-el="Apple" title-en="Apple"/>
+			<category code="030504" title-el="Motorola" title-en="Motorola"/>
+			<category code="030505" title-el="Sharp" title-en="Sharp"/>
+			<category code="030508" title-el="Alcatel" title-en="Alcatel"/>
+			<category code="030507" title-el="Siemens" title-en="Siemens"/>
+			<category code="030506" title-el="Panasonic" title-en="Panasonic"/>
+		</category>
+		<category code="0306" title-el="Κουδούνια" title-en="Buzzers">
+			<category code="030610" title-el="Sony" title-en="Sony"/>
+			<category code="030611" title-el="LG" title-en="LG"/>
+			<category code="030601" title-el="Nokia" title-en="Nokia"/>
+			<category code="030602" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="030606" title-el="Apple" title-en="Apple"/>
+			<category code="030603" title-el="Motorola" title-en="Motorola"/>
+			<category code="030605" title-el="Sharp" title-en="Sharp"/>
+			<category code="030609" title-el="Samsung" title-en="Samsung"/>
+			<category code="030608" title-el="HTC" title-en="HTC"/>
+		</category>
+		<category code="0307" title-el="Μικρόφωνα" title-en="Microphones">
+			<category code="030708" title-el="Apple" title-en="Apple"/>
+			<category code="030709" title-el="HTC" title-en="HTC"/>
+			<category code="030710" title-el="LG" title-en="LG"/>
+			<category code="030711" title-el="Sony" title-en="Sony"/>
+			<category code="030701" title-el="Nokia" title-en="Nokia"/>
+			<category code="030702" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="030703" title-el="Samsung" title-en="Samsung"/>
+			<category code="030705" title-el="Motorola" title-en="Motorola"/>
+			<category code="030704" title-el="Sharp" title-en="Sharp"/>
+			<category code="030707" title-el="Alcatel" title-en="Alcatel"/>
+		</category>
+		<category code="0315" title-el="Κεραίες" title-en="Antennas">
+			<category code="031506" title-el="Sony" title-en="Sony"/>
+			<category code="031502" title-el="Nokia" title-en="Nokia"/>
+			<category code="031504" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="031505" title-el="Apple" title-en="Apple"/>
+			<category code="031501" title-el="Motorola" title-en="Motorola"/>
+		</category>
+		<category code="0326" title-el="Κάμερες" title-en="Camera's">
+			<category code="032604" title-el="Apple" title-en="Apple"/>
+			<category code="032605" title-el="Sony" title-en="Sony"/>
+			<category code="032603" title-el="Samsung" title-en="Samsung"/>
+			<category code="032601" title-el="Nokia" title-en="Nokia"/>
+			<category code="032602" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+		</category>
+		<category code="0316" title-el="Joysticks" title-en="Joysticks">
+			<category code="031606" title-el="Samsung" title-en="Samsung"/>
+			<category code="031601" title-el="Nokia" title-en="Nokia"/>
+			<category code="031603" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="031604" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="031602" title-el="Siemens" title-en="Siemens"/>
+		</category>
+		<category code="0303" title-el="Τζαμάκια" title-en="Lens">
+			<category code="030301" title-el="Εσωτερικά" title-en="Internal"/>
+			<category code="030302" title-el="Εξωτερικά" title-en="External"/>
+			<category code="030303" title-el="Full Set" title-en="Full Set"/>
+		</category>
+		<category code="0323" title-el="Καπάκια Κάμερας" title-en="Camera Covers">
+			<category code="032301" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="032302" title-el="Nokia" title-en="Nokia"/>
+			<category code="032305" title-el="Samsung" title-en="Samsung"/>
+			<category code="032306" title-el="Motorola" title-en="Motorola"/>
+		</category>
+		<category code="0324" title-el="Καπάκια Κεραίας" title-en="Antenna Covers">
+			<category code="032402" title-el="HTC" title-en="HTC"/>
+		</category>
+		<category code="0321" title-el="Καπάκια Μπαταρίας" title-en="Battery Covers">
+			<category code="032109" title-el="Sony" title-en="Sony"/>
+			<category code="032110" title-el="Motorola" title-en="Motorola"/>
+			<category code="032111" title-el="Huawei" title-en="Huawei"/>
+			<category code="032101" title-el="Nokia" title-en="Nokia"/>
+			<category code="032103" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="032107" title-el="Samsung" title-en="Samsung"/>
+			<category code="032106" title-el="LG" title-en="LG"/>
+			<category code="032105" title-el="HTC" title-en="HTC"/>
+			<category code="032104" title-el="Apple" title-en="Apple"/>
+			<category code="032108" title-el="Blackberry" title-en="Blackberry"/>
+		</category>
+		<category code="0308" title-el="Διακόπτες" title-en="Buttons">
+			<category code="030801" title-el="Διακόπτες On-Off" title-en="On-Off Buttons"/>
+			<category code="030802" title-el="Καλύμματα On-Off" title-en="On-Off Covers"/>
+		</category>
+		<category code="0310" title-el="Μεσαία Πλαίσια" title-en="Middle Plates">
+			<category code="031001" title-el="Nokia" title-en="Nokia"/>
+			<category code="031002" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="031003" title-el="Samsung" title-en="Samsung"/>
+			<category code="031004" title-el="Apple" title-en="Apple"/>
+			<category code="031005" title-el="HTC" title-en="HTC"/>
+			<category code="031006" title-el="Sony" title-en="Sony"/>
+		</category>
+		<category code="0311" title-el="Sliders" title-en="Sliders">
+			<category code="031101" title-el="Nokia" title-en="Nokia"/>
+			<category code="031102" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+		</category>
+		<category code="0312" title-el="IC" title-en="IC">
+			<category code="031203" title-el="Apple" title-en="Apple"/>
+			<category code="031201" title-el="Nokia" title-en="Nokia"/>
+			<category code="031202" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+		</category>
+		<category code="0313" title-el="Επαφές Φόρτισης &amp; Handsfree" title-en="Plugin &amp; Handsfree Connectors">
+			<category code="031309" title-el="HTC" title-en="HTC"/>
+			<category code="031310" title-el="Alcatel" title-en="Alcatel"/>
+			<category code="031311" title-el="Sony" title-en="Sony"/>
+			<category code="031304" title-el="Nokia" title-en="Nokia"/>
+			<category code="031307" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="031305" title-el="Samsung" title-en="Samsung"/>
+			<category code="031302" title-el="LG" title-en="LG"/>
+			<category code="031301" title-el="Apple" title-en="Apple"/>
+			<category code="031303" title-el="Motorola" title-en="Mototola"/>
+			<category code="031308" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="031306" title-el="Sharp" title-en="Sharp"/>
+			<category code="031312" title-el="Universal για Tablet" title-en="Universal for Tablet"/>
+		</category>
+		<category code="0314" title-el="Επαφές Μπαταρίας" title-en="Battery Connectors">
+			<category code="031403" title-el="Apple" title-en="Apple"/>
+			<category code="031402" title-el="Nokia" title-en="Nokia"/>
+			<category code="031401" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+		</category>
+		<category code="0320" title-el="Λοιπά Ανταλλακτικά" title-en="Various Spare Parts">
+			<category code="032001" title-el="Διάφορα" title-en="Various"/>
+			<category code="032002" title-el="Σετ Βίδες" title-en="Screw Set"/>
+		</category>
+		<category code="0319" title-el="Επαφές-Βάσεις Κάρτας Μνήμης &amp; SIM" title-en="Memory Card &amp; SIM Connectors-Bases">
+			<category code="031905" title-el="Blackberry" title-en="Blackberry"/>
+			<category code="031906" title-el="Samsung" title-en="Samsung"/>
+			<category code="031907" title-el="Sony" title-en="Sony"/>
+			<category code="031908" title-el="HTC" title-en="HTC"/>
+			<category code="031909" title-el="LG" title-en="LG"/>
+			<category code="031901" title-el="Nokia" title-en="Nokia"/>
+			<category code="031904" title-el="Sony Ericsson" title-en="Sony Ericsson"/>
+			<category code="031903" title-el="Apple" title-en="Apple"/>
+			<category code="031902" title-el="Siemens" title-en="Siemens"/>
+		</category>
+		<category code="0302" title-el="Επαφές Οθόνης &amp; Μηχανισμού Αφής" title-en="Lcd &amp; Touch Screen Connectors">
+			<category code="030202" title-el="Apple" title-en="Apple"/>
+			<category code="030201" title-el="Nokia" title-en="Nokia"/>
+		</category>
+		<category code="0329" title-el="Ανταλλακτικά Bluetooth" title-en="Ανταλλακτικά Bluetooth">
+			<category code="032901" title-el="Ακουστικά Hands Free" title-en="Earphones"/>
+			<category code="032902" title-el="Μπαταρίες" title-en="Batteries"/>
+		</category>
+	</category>
+	<category code="04" title-el="Εξοπλισμός Service" title-en="Service Equipment">
+		<category code="0401" title-el="Εργαλεία" title-en="Tools">
+			<category code="040101" title-el="Σετ Εργαλέιων" title-en="Tools Set"/>
+			<category code="040102" title-el="Διάφορα Εργαλεία" title-en="Various Tools"/>
+			<category code="040103" title-el="gTools" title-en="gTools"/>
+		</category>
+		<category code="0402" title-el="Παρελκόμενα Service" title-en="Various Service Products">
+			<category code="040201" title-el="Παρελκόμενα Service" title-en="Various Service Products"/>
+		</category>
+		<category code="0404" title-el="Σταθμοί Κόλλησης" title-en="Soldering Stations">
+			<category code="040401" title-el="Σταθμοί Κόλησης" title-en="Soldering Stations"/>
+		</category>
+		<category code="0405" title-el="Σταθμοί Θερμού Αέρα" title-en="Hot Air Stations">
+			<category code="040501" title-el="Σταθμοί Θερμού Αέρα" title-en="Hot Air Stations"/>
+		</category>
+	</category>
+	<category code="02" title-el="Σταθερή Τηλεφωνία" title-en="Land Line Products">
+		<category code="0202" title-el="Ασύρματα Τηλέφωνα" title-en="Dects">
+			<category code="020202" title-el="Panasonic" title-en="Panasonic"/>
+			<category code="020208" title-el="Sagem" title-en="Sagem"/>
+			<category code="020207" title-el="Grundig" title-en="Grundig"/>
+		</category>
+		<category code="0201" title-el="Σταθερά Τηλέφωνα" title-en="Land Line Phones">
+			<category code="020107" title-el="Nippon" title-en="Nippon"/>
+			<category code="020108" title-el="Alcatel" title-en="Alcatel"/>
+			<category code="020109" title-el="WiTech" title-en="WiTech"/>
+			<category code="020102" title-el="Panasonic" title-en="Panasonic"/>
+			<category code="020106" title-el="Sagem" title-en="Sagem"/>
+		</category>
+		<category code="0203" title-el="Φαξ" title-en="Fax">
+			<category code="020302" title-el="Panasonic" title-en="Panasonic"/>
+			<category code="020306" title-el="Phillips" title-en="Phillips"/>
+		</category>
+		<category code="0205" title-el="Πολυμηχανήματα" title-en="Multifunctional Printers">
+			<category code="020501" title-el="Panasonic" title-en="Panasonic"/>
+			<category code="020502" title-el="Philips" title-en="Philips"/>
+		</category>
+		<category code="0204" title-el="Αναλώσιμα" title-en="Consumables">
+			<category code="020404" title-el="Waste Toners" title-en="Waste Toners"/>
+			<category code="020401" title-el="Μελάνια - Ταινίες" title-en="Toners - Ink Films"/>
+			<category code="020402" title-el="Τύμπανα" title-en="Drums"/>
+		</category>
+		<category code="0206" title-el="Αξεσουάρ" title-en="Accessories">
+			<category code="020601" title-el="Ακουστικά" title-en="Headset"/>
+		</category>
+	</category>
+	-->
+	<category code="05" title-el="Λοιπά Προιόντα" title-en="Various Products">
+		<category code="0503" title-el="Μπαταρίες" title-en="Batteries">
+			<category code="050301" title-el="Αλκαλικές" title-en="Alcaline"/>
+			<category code="050302" title-el="Επαναφορτιζόμενες" title-en="Rechargable"/>
+			<category code="050303" title-el="Cell Batteries" title-en="Cell Batteries"/>
+			<category code="050304" title-el="Ακουστικών Βαρηκοΐας" title-en="Hearing Aid Batteries"/>
+			<category code="050306" title-el="Ρολογιών" title-en="Watches"/>
+			<category code="050305" title-el="Φορτιστές Μπαταριών" title-en="Battery Chargers"/>
+		</category>
+		<category code="0504" title-el="Φακοί" title-en="Flashlight">
+			<category code="050401" title-el="Sunmol" title-en="Sunmol"/>
+		</category>
+		<category code="0507" title-el="Συσκευές Mp3/Mp4" title-en="Mp3/Mp4 Players">
+			<category code="050705" title-el="Mp3/Mp4" title-en="Mp3/Mp4"/>
+		</category>
+		<category code="0501" title-el="Προηγμένη Τεχνολογία" title-en="Advanced Technology">
+			<category code="050103" title-el="Ψηφιακοί Δέκτες" title-en="MPEG4"/>
+			<category code="050101" title-el="Ηλεκτρονικά" title-en="Electronics"/>
+			<category code="050102" title-el="Προβολείς Παρουσίασης" title-en="Projectors"/>
+			<category code="050104" title-el="Καλώδια" title-en="Cables"/>
+		</category>
+	</category>
+
+</categories>

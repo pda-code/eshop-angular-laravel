@@ -1,0 +1,121 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page-header">
+		<h2><i class="fa fa-desktop"></i> <span translate="OrderDetail.$views.CreateOrEdit.title"></span> <small class="text-muted" translate="OrderDetail.$views.CreateOrEdit.description"></small></h2>	
+        <span class="label label-primary" data-bind1="text: dirtyFlag.isDirty()"></span>
+    </div>
+
+        <div class="well clearfix">
+            <button class="btn btn-default pull-left" ng-click="actions.save()">
+                <i class="fa fa-save fa-lg"></i> <span translate="$App.save"></span>
+            </button>
+            <button class="btn btn-default pull-right" ng-click="actions.cancel()"><i class="fa fa-mail-reply fa-lg"></i> <span translate="$App.cancel"></span></button>
+        </div>
+
+    <form novalidate name="MyForm">
+            <div class="row">
+            <div class="col-md-12">
+                    <div class="row">
+            <div class="col col-md-12">
+                	<div class="panel panel-default">
+		<div class="panel-heading">
+			<a class="panel-caption" ng-init="setExpanded('6nxSiDN-9Umayqm2UQ7aYQ')" ng-click="setExpanded('6nxSiDN-9Umayqm2UQ7aYQ')" ng-class="{collapsed:!expanded['6nxSiDN-9Umayqm2UQ7aYQ']}" translate="OrderDetailCreateOrEdit.OrderDetail"> <span class="ng-hide" ng-show="inProgress"><i class="fa fa-spinner fa-spin"></i></span></a>
+		</div>
+
+		<div class="panel-body">
+			<fieldset class1="form-horizontal" role="form" id="6nxSiDN-9Umayqm2UQ7aYQ" collapse="!expanded['6nxSiDN-9Umayqm2UQ7aYQ']">
+						<div class="form-group" ng-class="{'has-error': MyForm.Id.$invalid && MyForm.Id.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="OrderDetail.Id"></label>
+							<div>
+								    <div>{{OrderDetail.Id}}</div>
+
+							</div>
+							<p ng-show="MyForm.Id.$error.required && MyForm.Id.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Id"></p>
+							<p ng-show="MyForm.Id.$error.number && MyForm.Id.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Id"></p>
+							<p ng-show="MyForm.Id.$error.email && MyForm.Id.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Id"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.OrderId.$invalid && MyForm.OrderId.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="OrderDetail.OrderId"></label>
+							<div>
+									<select class="form-control" name="OrderId" ng-model="OrderDetail.OrderId" ng-required="true" ng-options="item.Id as item.Id for item in $$lookups.OrderId">
+		<option value="">(select)</option>
+	</select>
+
+							</div>
+							<p ng-show="MyForm.OrderId.$error.required && MyForm.OrderId.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="OrderId"></p>
+							<p ng-show="MyForm.OrderId.$error.number && MyForm.OrderId.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="OrderId"></p>
+							<p ng-show="MyForm.OrderId.$error.email && MyForm.OrderId.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="OrderId"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.ProductId.$invalid && MyForm.ProductId.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="OrderDetail.ProductId"></label>
+							<div>
+									<select class="form-control" name="ProductId" ng-model="OrderDetail.ProductId" ng-required="true" ng-options="item.Id as item.Name for item in $$lookups.ProductId">
+		<option value="">(select)</option>
+	</select>
+
+							</div>
+							<p ng-show="MyForm.ProductId.$error.required && MyForm.ProductId.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="ProductId"></p>
+							<p ng-show="MyForm.ProductId.$error.number && MyForm.ProductId.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="ProductId"></p>
+							<p ng-show="MyForm.ProductId.$error.email && MyForm.ProductId.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="ProductId"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.Quantity.$invalid && MyForm.Quantity.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="OrderDetail.Quantity"></label>
+							<div>
+									<input type="number" name="Quantity" class="form-control" placeholder="{{'OrderDetail.Quantity' | translate}}" ng-model="OrderDetail.Quantity" ng-required="true" />
+
+							</div>
+							<p ng-show="MyForm.Quantity.$error.required && MyForm.Quantity.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Quantity"></p>
+							<p ng-show="MyForm.Quantity.$error.number && MyForm.Quantity.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Quantity"></p>
+							<p ng-show="MyForm.Quantity.$error.email && MyForm.Quantity.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Quantity"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.Price.$invalid && MyForm.Price.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="OrderDetail.Price"></label>
+							<div>
+									<input type="number" name="Price" class="form-control" placeholder="{{'OrderDetail.Price' | translate}}" ng-model="OrderDetail.Price" ng-required="true" />
+
+							</div>
+							<p ng-show="MyForm.Price.$error.required && MyForm.Price.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Price"></p>
+							<p ng-show="MyForm.Price.$error.number && MyForm.Price.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Price"></p>
+							<p ng-show="MyForm.Price.$error.email && MyForm.Price.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Price"></p>
+						</div>
+			</fieldset>
+		</div>
+	</div>	
+
+            </div>
+    </div>
+
+            </div>
+    </div>
+
+    </form>
+
+

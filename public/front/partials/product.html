@@ -1,0 +1,205 @@
+﻿<div class="container">
+    <div class="row product-info full">
+
+        <div class="col-sm-7 images-block">
+            <p>
+                <a href title="{{product.name}}" ng-click="openLightboxModal(0)"> <img ng-src="images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}" class="img-responsive thumbnail"> </a>
+            </p>
+            <ul class="list-unstyled list-inline">
+                <li ng-repeat="image in product.images">
+                    <a href title="{{product.name}}" ng-click="openLightboxModal($index+1)"> <img ng-src="images/{{image.image}}" alt="{{product.name}}" title="{{product.name}}" class="img-responsive thumbnail"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-5 product-details">
+
+            <div class="panel-smart">
+                <h2>{{product.name}}</h2>
+
+                <div class="rating">
+                    <rating ng-model="product.rating" class="fa" max="5" readonly="true" state-on="'fa fa-star'" state-off="'fa fa-star-o'"></rating>
+                    <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                </div>
+                <hr>
+                <ul class="list-unstyled manufacturer">
+                    <li>
+                        <span>Brand:</span> <a href="#/manufacturers/{{product.manufacturer_id}}">{{product.manufacturer_name}}</a>
+                    </li>
+                    <li><span>Model:</span> {{product.model}}</li>
+                    <li><span>Reward Points:</span> {{product.reward_points}}</li>
+                    <li>
+                        <span>Availability:</span> <strong class="label label-danger">{{product.stock_status}}</strong>
+                    </li>
+                </ul>
+                <hr>
+                <div class="price">
+                    <p><span class="price-head">Price :</span> <span class="price-new">{{app.formatPrice(product.price_including_tax)}}</span> <span class="price-old">{{app.formatPrice(product.taxed_price)}}</span></p>
+                    <p class="price-tax">Tax: {{app.formatPrice(product.tax)}}</p>
+                    <p class="price-tax">Price Ex. Tax: {{app.formatPrice(product.price_including_tax-product.tax)}}</p>
+                </div>
+                <hr>
+                <div class="options">
+                    <!--
+                    <h3>Available Options</h3>
+                    <div class="form-group">
+                        <label for="select" class="control-label text-uppercase">Select:</label>
+                        <select name="select" id="select" class="form-control">
+                            <option value="1" selected="">Select</option>
+                            <option value="2">Option 1</option>
+                            <option value="3">Option 1</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label text-uppercase">Radio:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                Option one is this and that—be sure to include why it's great
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                Option two can be something else and selecting it will deselect option one
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label text-uppercase">Checkbox:</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                Option one is this and that—be sure to include why it's great
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" checked="">
+                                Option two is checked
+                            </label>
+                        </div>
+                    </div>
+                    -->
+                    <div class="form-group">
+                        <label class="control-label" for="input-quantity">Qty</label>
+
+                        <div class="input-group">
+                            <input type="number" class="form-control" ng-model="quantity">
+                              <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button" ng-click="app.shoppingCart.add(product,quantity)"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                              </span>
+                        </div>
+                    </div>
+                    <div class="cart-button button-group">
+                        <button type="button" title="" class="btn btn-wishlist" data-original-title="Wishlist" ng-click="app.wishlist.add(product);">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button type="button" title="" class="btn btn-compare" data-original-title="Compare" ng-click="app.comparison.add(product);">
+                            <i class="fa fa-bar-chart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-cart" ng-click="app.shoppingCart.add(product,quantity)">
+                            Add to cart <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs-panel panel-smart">
+        <ul class="nav nav-tabs">
+            <li ng-class="{active: activeTab==='description'}"><a href ng-click="changeTab('description')">Description</a></li>
+            <li ng-class="{active: activeTab==='specs'}"><a href ng-click="changeTab('specs')">Specs ({{product.attributes_count}})</a></li>
+            <li ng-class="{active: activeTab==='reviews'}"><a href ng-click="changeTab('reviews')">Reviews ({{product.reviews_count}})</a></li>
+        </ul>
+
+        <div class="tab-content clearfix">
+            <div id="tab-description" class="tab-pane" ng-class="{active: activeTab==='description'}">
+                {{product.description}}
+            </div>
+            <div id="tab-specification" class="tab-pane" ng-class="{active: activeTab==='specs'}">
+                <section class="clearfix" ng-repeat="group in specs">
+                    <h3>{{group.name}}</h3>
+                    <dl>
+                        <dt class="col-md-3" ng-repeat-start="attr in group.attributes">{{attr.name}}</dt>
+                        <dd class="col-md-9" ng-repeat-end>{{attr.value}}</dd>
+                    </dl>
+                    <hr/>
+                </section>
+
+            </div>
+            <div id="tab-review" class="tab-pane" ng-class="{active: activeTab==='reviews'}">
+                <div class="reviews" ng-if="product.reviews_count>0">
+                    <div ng-repeat="item in service.items">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>{{item.author}}</h5>
+
+                                <p>{{app.formatDate(item.created_at)}}</p>
+
+                                <p class="rating">
+                                    <rating ng-model="item.rating" max="5" readonly="true" state-on="'fa fa-star'" state-off="'fa fa-star-o'"></rating>
+                                    <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                                </p>
+                            </div>
+                            <div class="col-md-9">
+                                <h4>{{item.title}}</h4>
+
+                                <div>{{item.text}}</div>
+                            </div>
+                        </div>
+                        <hr/>
+                    </div>
+
+
+                    <div class="clearfix">
+                        <div id="pager" class="pull-right">
+                            <pagination boundary-links="true" total-items="service.pager.total_records" items-per-page="service.pager.page_size" max-size="service.pager.page_slide" rotate="false" ng-model="service.pager.page_index" ng-change="service.pageChanged(true)" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+                        </div>
+                    </div>
+                </div>
+
+                    <form name="reviewForm" role="form" ng-submit="submitReview()" novalidate>
+
+                        <h2 ng-if="product.reviews_count>0">Write a review</h2>
+
+                        <h2 ng-if="product.reviews_count==0">Be the first to write a review</h2>
+
+                        <!--AUTHOR-->
+                        <div class="form-group">
+                            <label class="control-label control-label-required">Your Name</label>
+                            <input type="text" name="author" class="form-control" ng-model="review.author" placeholder="email" required>
+                        </div>
+
+                        <!--TITLE-->
+                        <div class="form-group">
+                            <label class="control-label control-label-required">Title</label>
+                            <input type="text" name="title" class="form-control" ng-model="review.title" placeholder="title" required>
+                        </div>
+
+                        <!--RATING-->
+                        <div class="form-group">
+                            <label class="control-label control-label-required">Rating</label>
+                            <div>
+                                <input type="radio" name="rating" ng-value="1" ng-model="review.rating" required/>
+                                <input type="radio" name="rating" ng-value="2" ng-model="review.rating" required/> <input type="radio" name="rating" ng-value="3" ng-model="review.rating" required/> <input type="radio" name="rating" ng-value="4" ng-model="review.rating" required/> <input type="radio" name="rating" ng-value="5" ng-model="review.rating" required/>
+                            </div>
+                        </div>
+
+                        <!--TEXT-->
+                        <div class="form-group">
+                            <label class="control-label control-label-required">Text</label>
+                            <textarea class="form-control" name="text" rows="5" ng-model="review.text" required placeholder="Please write your review"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-save fa-lg"></i> Submit
+                        </button>
+                    </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>

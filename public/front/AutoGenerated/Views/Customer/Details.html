@@ -1,0 +1,215 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page-header">
+		<h2><i class="fa fa-desktop"></i> <span translate="Customer.$views.Details.title"></span> <small class="text-muted" translate="Customer.$views.Details.description"></small></h2>	
+        <span class="label label-primary" data-bind1="text: dirtyFlag.isDirty()"></span>
+    </div>
+
+
+    <form novalidate name="MyForm">
+            <div class="row">
+            <div class="col-md-12">
+                    <div class="row">
+            <div class="col col-md-12">
+                	<div class="panel panel-default">
+		<div class="panel-heading">
+			<a class="panel-caption" ng-init="setExpanded('hyB2dXj2SE2_oVH69pvWcg')" ng-click="setExpanded('hyB2dXj2SE2_oVH69pvWcg')" ng-class="{collapsed:!expanded['hyB2dXj2SE2_oVH69pvWcg']}" translate="CustomerDetails.Customer"> <span class="ng-hide" ng-show="inProgress"><i class="fa fa-spinner fa-spin"></i></span></a>
+		</div>
+
+		<div class="panel-body">
+			<fieldset class1="form-horizontal" role="form" id="hyB2dXj2SE2_oVH69pvWcg" collapse="!expanded['hyB2dXj2SE2_oVH69pvWcg']">
+						<div class="form-group" ng-class="{'has-error': MyForm.Id.$invalid && MyForm.Id.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="Customer.Id"></label>
+							<div>
+								    <div>{{Customer.Id}}</div>
+
+							</div>
+							<p ng-show="MyForm.Id.$error.required && MyForm.Id.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Id"></p>
+							<p ng-show="MyForm.Id.$error.number && MyForm.Id.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Id"></p>
+							<p ng-show="MyForm.Id.$error.email && MyForm.Id.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Id"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.Name.$invalid && MyForm.Name.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': false }" translate="Customer.Name"></label>
+							<div>
+								    <div>{{Customer.Name}}</div>
+
+							</div>
+							<p ng-show="MyForm.Name.$error.required && MyForm.Name.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Name"></p>
+							<p ng-show="MyForm.Name.$error.number && MyForm.Name.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Name"></p>
+							<p ng-show="MyForm.Name.$error.email && MyForm.Name.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Name"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.Address.$invalid && MyForm.Address.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': false }" translate="Customer.Address"></label>
+							<div>
+								    <div>{{Customer.Address}}</div>
+
+							</div>
+							<p ng-show="MyForm.Address.$error.required && MyForm.Address.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Address"></p>
+							<p ng-show="MyForm.Address.$error.number && MyForm.Address.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Address"></p>
+							<p ng-show="MyForm.Address.$error.email && MyForm.Address.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Address"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.Photo.$invalid && MyForm.Photo.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': false }" translate="Customer.Photo"></label>
+							<div>
+								    <p class="form-control-static">
+        <img class="img-thumbnail img-responsive" style="width: 90px; height: 90px;" ng-src="data:image/JPEG;base64,{{Customer.Photo}}">
+    </p>
+
+							</div>
+							<p ng-show="MyForm.Photo.$error.required && MyForm.Photo.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Photo"></p>
+							<p ng-show="MyForm.Photo.$error.number && MyForm.Photo.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Photo"></p>
+							<p ng-show="MyForm.Photo.$error.email && MyForm.Photo.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Photo"></p>
+						</div>
+			</fieldset>
+		</div>
+	</div>	
+
+            </div>
+            <div class="col col-md-12">
+                    <tabset>
+            <tab heading="{{'Customer.Orders' | translate}}">
+                <div>
+                        <div class="panel panel-default">
+        <div class="panel-heading clearfix">
+            <div class="pull-left">
+                <a class="panel-caption" translate="Customer.Orders" ng-init="setExpanded('vnKawpf69EuY_E-7zO6dKA')" ng-click="setExpanded('vnKawpf69EuY_E-7zO6dKA')" ng-class="{collapsed:!expanded['vnKawpf69EuY_E-7zO6dKA']}"></a> <span class="ng-hide" ng-show="Customer.Orders.inProgress"><i class="fa fa-spinner fa-spin"></i></span> 
+            </div>
+            <div class="pull-right">
+                <button class="btn btn-success  btn-xs" popover="New" popover-trigger="mouseenter" ng-click="Customer.Orders.actions.create()" translate="$App.create"></button>
+                <div class="btn-group" ng-if="Customer.Orders.selectedItem!=null">
+                    <button class="btn btn-success  btn-xs" popover="Edit" popover-trigger="mouseenter" popover-append-to-body="true" ng-click="Customer.Orders.actions.edit()"><i class="fa fa-pencil"></i></button>
+                    <button class="btn btn-primary  btn-xs" popover="Details" popover-trigger="mouseenter" popover-append-to-body="true" ng-click="Customer.Orders.actions.details()"><i class="fa fa-eye"></i></button>
+                    <button class="btn btn-danger  btn-xs" popover="Delete" popover-trigger="mouseenter" popover-append-to-body="true" ng-click="Customer.Orders.actions.delete()"><i class="fa fa-trash-o"></i></button>
+                </div>
+                <div class="btn-group btn-group-xs" dropdown="dropdown">
+                    <button type="button" class="btn btn-default" popover="Sort" popover-trigger="mouseenter" popover-append-to-body="true" ng-click="Customer.Orders.sortDirectionChanged()">
+                        <span>{{Customer.Orders.state.sortColumn}}</span>&nbsp;
+                        <i class="fa fa-fw" ng-class="{'fa-sort-amount-asc': Customer.Orders.state.sortDirection=='Asc', 'fa-sort-amount-desc': Customer.Orders.state.sortDirection=='Desc'}"></i>
+                    </button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="javascript:void(0)" ng-click="Customer.Orders.sortColumnChanged('Id')" translate="Order.Id"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" ng-click="Customer.Orders.sortColumnChanged('MyInt')" translate="Order.MyInt"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" ng-click="Customer.Orders.sortColumnChanged('MyString')" translate="Order.MyString"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" ng-click="Customer.Orders.sortColumnChanged('MyDateTime')" translate="Order.MyDateTime"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" ng-click="Customer.Orders.sortColumnChanged('MyDecimal')" translate="Order.MyDecimal"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" ng-click="Customer.Orders.sortColumnChanged('MyDouble')" translate="Order.MyDouble"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" ng-click="Customer.Orders.sortColumnChanged('MyBoolean')" translate="Order.MyBoolean"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" ng-click="Customer.Orders.sortColumnChanged('CustomerId')" translate="Order.CustomerId"></a>
+                            </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+		<div class="panel-body">
+			<div id="vnKawpf69EuY_E-7zO6dKA" collapse="!expanded['vnKawpf69EuY_E-7zO6dKA']">
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+								<th translate="Order.Id"></th>
+								<th translate="Order.MyInt"></th>
+								<th translate="Order.MyString"></th>
+								<th translate="Order.MyDateTime"></th>
+								<th translate="Order.MyDecimal"></th>
+								<th translate="Order.MyDouble"></th>
+								<th translate="Order.MyBoolean"></th>
+								<th translate="Order.CustomerId"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in Customer.Orders.items" ng-click="Customer.Orders.selectedItemChanged(item);" ng-class="{'bg-primary': item===Customer.Orders.selectedItem}">
+								<td>    <div>{{item.Id}}</div>
+</td>
+								<td>    <div>{{item.MyInt}}</div>
+</td>
+								<td>    <div>{{item.MyString}}</div>
+</td>
+								<td>    <div>{{item.MyDateTime}}</div>
+</td>
+								<td>    <div>{{item.MyDecimal}}</div>
+</td>
+								<td>    <div>{{item.MyDouble}}</div>
+</td>
+								<td>    <label><input type="checkbox" name="MyBoolean" ng-model="item.MyBoolean" ng-required="false" /></label>
+</td>
+								<td>    <div>{{item.CustomerId}}</div>
+</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+        <div class="panel-footer clearfix">
+            <div class="pull-left pagination">
+				<span>{{Customer.Orders.pager.totalRecords}} <span translate="$App.pager.recordsFound"></span></span>
+				<span style="padding-left:20px; padding-right:5px;" translate="$App.pager.show"></span>
+                <select ng-model="Customer.Orders.pager.pageSize" ng-change="Customer.Orders.pageSizeChanged(pager.pageSize)" ng-options="o for o in Customer.Orders.pager.pageSizeOptions"></select> <span translate="$App.pager.entries"></span>
+            </div>
+
+            <div id="pager" class="pull-right">
+                <pagination boundary-links="true" total-items="Customer.Orders.pager.totalRecords" items-per-page="Customer.Orders.pager.pageSize" max-size="Customer.Orders.pager.pageSlide" num-pages="Customer.Orders.pager.totalPages" rotate="false" ng-model="Customer.Orders.pager.pageIndex" ng-change="Customer.Orders.pageChanged()" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </tab>
+    </tabset>
+
+            </div>
+    </div>
+
+            </div>
+    </div>
+
+    </form>
+
+

@@ -1,0 +1,97 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page-header">
+		<h2><i class="fa fa-desktop"></i> <span translate="Address.$views.CreateOrEdit.title"></span> <small class="text-muted" translate="Address.$views.CreateOrEdit.description"></small></h2>	
+        <span class="label label-primary" data-bind1="text: dirtyFlag.isDirty()"></span>
+    </div>
+
+        <div class="well clearfix">
+            <button class="btn btn-default pull-left" ng-click="actions.save()">
+                <i class="fa fa-save fa-lg"></i> <span translate="$App.save"></span>
+            </button>
+            <button class="btn btn-default pull-right" ng-click="actions.cancel()"><i class="fa fa-mail-reply fa-lg"></i> <span translate="$App.cancel"></span></button>
+        </div>
+
+    <form novalidate name="MyForm">
+            <div class="row">
+            <div class="col-md-12">
+                    <div class="row">
+            <div class="col col-md-12">
+                	<div class="panel panel-default">
+		<div class="panel-heading">
+			<a class="panel-caption" ng-init="setExpanded('mQflqkePDkKWS7qAx0Zr_w')" ng-click="setExpanded('mQflqkePDkKWS7qAx0Zr_w')" ng-class="{collapsed:!expanded['mQflqkePDkKWS7qAx0Zr_w']}" translate="AddressCreateOrEdit.Address"> <span class="ng-hide" ng-show="inProgress"><i class="fa fa-spinner fa-spin"></i></span></a>
+		</div>
+
+		<div class="panel-body">
+			<fieldset class1="form-horizontal" role="form" id="mQflqkePDkKWS7qAx0Zr_w" collapse="!expanded['mQflqkePDkKWS7qAx0Zr_w']">
+						<div class="form-group" ng-class="{'has-error': MyForm.Id.$invalid && MyForm.Id.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="Address.Id"></label>
+							<div>
+								    <div>{{Address.Id}}</div>
+
+							</div>
+							<p ng-show="MyForm.Id.$error.required && MyForm.Id.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Id"></p>
+							<p ng-show="MyForm.Id.$error.number && MyForm.Id.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Id"></p>
+							<p ng-show="MyForm.Id.$error.email && MyForm.Id.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Id"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.Street.$invalid && MyForm.Street.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="Address.Street"></label>
+							<div>
+									<input type="text" name="Street" class="form-control" placeholder="{{'Address.Street' | translate}}" ng-model="Address.Street" ng-required="true" />
+
+							</div>
+							<p ng-show="MyForm.Street.$error.required && MyForm.Street.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="Street"></p>
+							<p ng-show="MyForm.Street.$error.number && MyForm.Street.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="Street"></p>
+							<p ng-show="MyForm.Street.$error.email && MyForm.Street.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="Street"></p>
+						</div>
+						<div class="form-group" ng-class="{'has-error': MyForm.City.$invalid && MyForm.City.$dirty }">
+							<label class="control-label" ng-class="{'control-label-required': true }" translate="Address.City"></label>
+							<div>
+									<input type="text" name="City" class="form-control" placeholder="{{'Address.City' | translate}}" ng-model="Address.City" ng-required="true" />
+
+							</div>
+							<p ng-show="MyForm.City.$error.required && MyForm.City.$dirty" class="help-block" translate="$App.validation.required" translate-value-field="City"></p>
+							<p ng-show="MyForm.City.$error.number && MyForm.City.$dirty" class="help-block" translate="$App.validation.number" translate-value-field="City"></p>
+							<p ng-show="MyForm.City.$error.email && MyForm.City.$dirty" class="help-block" translate="$App.validation.email" translate-value-field="City"></p>
+						</div>
+			</fieldset>
+		</div>
+	</div>	
+
+            </div>
+    </div>
+
+            </div>
+    </div>
+
+    </form>
+
+

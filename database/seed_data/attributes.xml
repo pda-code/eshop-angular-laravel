@@ -1,0 +1,21 @@
+<groups>
+    <group title-el="Τεχνικά χαρακτηριστικά">
+        <attribute title-el="Λειτουργικό σύστημα" data-type="string" options-el="windows 7|windows 8|Android|iOS"/>
+        <attribute title-el="Επεξεργαστής" data-type="string" options-el="Intel|AMD|Celeron"/>
+        <attribute title-el="Συχνότητα ρολογιού" data-type="string" options-el="2.4Mhz|2.6Mhz|3Mhz|i3|i5|i7"/>
+        <attribute title-el="Μέγεθος RAM" data-type="string"  options-el="2Gb|4Gb|8Gb|16Gb"/>
+        <attribute title-el="Τύπος συσκευής" data-type="string" options-el="SmartPhone|Tamplet|Camera"/>
+    </group>
+    <group title-el="Οθόνη">
+        <attribute title-el="Τεχνολογία οθόνης" data-type="string" options-el="Amoled|Super Amoled|Led"/>
+        <attribute title-el="Πλάτος ανάλυσης" data-type="string" options-el="1920|1660"/>
+        <attribute title-el="Ύψος ανάλυσης" data-type="string" options-el="1290|800"/>
+        <attribute title-el="Έγχρωμη οθόνη" data-type="boolean" options-el="Yes|No"/>
+        <attribute title-el="Οθόνη αφής" data-type="boolean" options-el="Yes|No"/>
+    </group>
+    <group title-el="Κάμερα">
+        <attribute title-el="Ανάλυση" data-type="string" options-el="5Mp|8Mp|12Mp|16Mp"/>
+        <attribute title-el="Μπροστινή κάμερα" data-type="boolean" options-el="Yes|No"/>
+        <attribute title-el="Εγγραφή βίντεο" data-type="boolean" options-el="Yes|No"/>
+    </group>
+</groups>

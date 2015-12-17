@@ -1,0 +1,33 @@
+﻿<h3 class="side-heading">Categories</h3>
+<div class="list-group">
+    <div class="list-group-item">
+        <!-- Nested list template -->
+        <script type="text/ng-template" id="items_renderer.html">
+            <span class="node-state" ng-click="toggleExpand(item)">
+                  <i class="fa fa-fw" ng-if="item.children_count>0" ng-class="{'fa fa-chevron-down': item.expanded, 'fa fa-chevron-right':!item.expanded}"></i>
+                  <i class="fa fa-square fa-fw" ng-if="item.children_count==0"></i>
+            </span>
+            <span class="node-caption" ng-click="selectCategory(item.id)">{{item.name}} ({{item.products_count}})</span>
+            <ul style="padding-left:25px;">
+                <li class="node" ng-repeat="item in item.children" ng-include="'items_renderer.html'" ng-class="{selected: (item.id==selectedCategoryId), expanded: item.expanded===true}"></li>
+            </ul>
+        </script>
+
+        <ul class="category-tree">
+            <li class="node" ng-repeat="item in categories" ng-include="'items_renderer.html'" ng-class="{selected: (item.id==selectedCategoryId), expanded: item.expanded===true}"></li>
+        </ul>
+    </div>
+</div>
+
+
+<section ng-repeat-start="group in groups">
+    <h3 class="side-heading" ng-repeat-start="attr in group.attributes">{{attr.name}}</h3>
+
+    <div class="list-group">
+        <div class="list-group-item" ng-repeat="value in attr.values">
+            <label><input name="filter2" type="checkbox" value="br2"> {{value.value}}</label>
+        </div>
+    </div>
+    <span ng-repeat-end style="display: none"></span>
+</section>
+<span ng-repeat-end style="display: none"></span>
