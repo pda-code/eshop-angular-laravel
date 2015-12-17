@@ -4,7 +4,7 @@ Demo: http://195.251.253.15:8080/eShopLaravel/public
 ## Explanation
 This project is an attempt to create a an open source e-commerce platform inspired from OpenCart, Prestashop e.t.c. The project uses the latests technologies (AngularJs, Bootstrap, Ticket Authentication, Models, Repositories, Services e.t.c) and it uses many well proven software patterns. The final purpose of this project was to try to use a code generator to produce FAST Controllers/Actions/Views for the admin area and initially fill the database. Unfortynatelly due to lack of free time the project is temporary abandoned.
 
-## Local Installation (I use windows machine)
+## Local Installation (steps for installation on a windows machine)
 
 1. Clone this repo to your desktop lets say in a folder e.g. ***c:\php_projects\eShopLaravel***
 2. Create a database in mysql with name ***codetrim_eshop***
