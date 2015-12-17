@@ -6,7 +6,7 @@ This project is an attempt to create a an open source e-commerce platform inspir
 
 ## Local Installation (I use windows machine)
 
-1. clone this repo to your desktop lets say in a folder e.g. ***c:\php_projects\eShopLaravel***
+1. Clone this repo to your desktop lets say in a folder e.g. ***c:\php_projects\eShopLaravel***
 2. Create a database in mysql with name ***codetrim_eshop***
 3. Run the ***c:\php_projects\eShopLaravel\utils\restore.bat*** to create sample data to the database. Edit the ***restore.bat*** to change the mysql credentials.
 4. Make apache to use as document root the folder ***c:\php_projects\***
