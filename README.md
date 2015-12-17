@@ -33,10 +33,10 @@ This project is an attempt to create a an open source e-commerce platform inspir
 ## Software patterns used
 - JWT Authentication (https://github.com/tymondesigns/jwt-auth) for REST authentication per request
 - Custom angular authentication interceptor
-- AngulatJS Locading Bar
+- AngulatJS loading bar (http://chieffancypants.github.io/angular-loading-bar/)
 - Custom directives for alerts.
 - DataContext service for exposing REST apis to Angular in a uniform way.
-- Custom directive for grid (and in general lists of data) with paging and sorting
+- Custom directive (*collectionService.js*) for grid (and in general lists of data) with paging and sorting
 - Backend generic service pattern with common actions GetAll, Insert, Update, Delete e.t.c 
 
 Happy coding!
