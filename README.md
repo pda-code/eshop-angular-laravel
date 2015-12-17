@@ -10,7 +10,9 @@ This project is an attempt to create a an open source e-commerce platform inspir
 2. Create a database in mysql with name ***codetrim_eshop***
 3. Run the ***c:\php_projects\eShopLaravel\utils\restore.bat*** to create sample data to the database. Edit the ***restore.bat*** to change the mysql credentials.
 4. Make apache to use as document root the folder ***c:\php_projects\***
-5. Change the code in ***C:\MyProjects\php\eShopLaravel\public\front\services\dataContext.js*** from ```var apiRoot = 'http://195.251.253.15:8080/eShopLaravel/public/api/'``` to ```var apiRoot = 'http://<host>:<port>/eShopLaravel/public/api/'```. This line tells angular where to find Rest Services.
+5. Change the code in ***C:\MyProjects\php\eShopLaravel\public\front\services\dataContext.js*** from 
+ ```var apiRoot = 'http://195.251.253.15:8080/eShopLaravel/public/api/'``` to 
+ ```var apiRoot = 'http://<host>:<port>/eShopLaravel/public/api/'```. This line tells angular where to find Rest Services.
 6. Enjoy
 
 
