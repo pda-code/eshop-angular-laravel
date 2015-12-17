@@ -18,7 +18,7 @@ This project is an attempt to create a an open source e-commerce platform inspir
  This line tells angular where to find Rest Services.
  
  
-6. Enjoy
+6. Explore the code and enjoy
 
 
 ## Technologies used
@@ -28,10 +28,15 @@ This project is an attempt to create a an open source e-commerce platform inspir
 - UI Bootstrap (https://angular-ui.github.io/bootstrap/)
 - MySQL
 - Bower for client side packages (http://bower.io/)
+- OpenCart database (http://www.opencart.com/) 
+
+## Software patterns used
 - JWT Authentication (https://github.com/tymondesigns/jwt-auth) for REST authentication per request
 - Custom angular authentication interceptor
+- AngulatJS Locading Bar
+- Custom directives for alerts.
 - DataContext service for exposing REST apis to Angular in a uniform way.
 - Custom directive for grid (and in general lists of data) with paging and sorting
-- Generic service pattern with common actions GetAll, Insert, Update, Delete
-- OpenCart database (http://www.opencart.com/) 
+- Backend generic service pattern with common actions GetAll, Insert, Update, Delete e.t.c 
+
 Happy coding!
