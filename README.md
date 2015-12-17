@@ -33,5 +33,5 @@ This project is an attempt to create a an open source e-commerce platform inspir
 - DataContext service for exposing REST apis to Angular in a uniform way.
 - Custom directive for grid (and in general lists of data) with paging and sorting
 - Generic service pattern with common actions GetAll, Insert, Update, Delete
- 
+- OpenCart database (http://www.opencart.com/) 
 Happy coding!
