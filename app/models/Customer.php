@@ -3,10 +3,12 @@
 
     use Illuminate\Auth\UserTrait;
     use Illuminate\Auth\UserInterface;
-    use CodeTrim\Models\BaseMode;
+    use CodeTrim\Models\BaseModel;
 
     class Customer extends BaseModel
     {
+
+
         //tables
         protected $table = 'customers';
         protected $primaryKey = 'id';

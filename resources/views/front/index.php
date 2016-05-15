@@ -362,9 +362,7 @@
   <div class="copyright">
     <div class="container">
       <p class="pull-left">
-        &nbsp; 2014 Spice Shoppe Stores. Bootstrap Layout All Rights Reserved.
-        Designed By <a href="http://sainathchillapuram.com">Sainath
-          Chillapuram</a>
+        &nbsp; Theme inspired/cloned by 2014 Spice Shoppe Stores (Designed By <a href="http://sainathchillapuram.com">Sainath Chillapuram)</a>
       </p>
       <ul class="pull-right list-inline">
         <li>

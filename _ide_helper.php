@@ -1,7 +1,7 @@
 <?php
 /**
  * An helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.0.20 on 2015-04-12.
+ * Generated for Laravel 5.0.20 on 2016-05-15.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12823,6 +12823,178 @@ namespace {
         public static function offsetUnset($key){
             //Method inherited from \DebugBar\DebugBar            
             return \Barryvdh\Debugbar\LaravelDebugbar::offsetUnset($key);
+        }
+        
+    }
+
+
+    class Context extends \CodeTrim\Facades\ContextFacade{
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getLanguageId(){
+            return \CodeTrim\Models\Context::getLanguageId();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getCurrencyId(){
+            return \CodeTrim\Models\Context::getCurrencyId();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getCustomerId(){
+            return \CodeTrim\Models\Context::getCustomerId();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getZoneId(){
+            return \CodeTrim\Models\Context::getZoneId();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function init($language_id, $currency_id, $customer_id){
+            return \CodeTrim\Models\Context::init($language_id, $currency_id, $customer_id);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getCurrency(){
+            return \CodeTrim\Models\Context::getCurrency();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getLanguage(){
+            return \CodeTrim\Models\Context::getLanguage();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getCustomer(){
+            return \CodeTrim\Models\Context::getCustomer();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setCustomer($customer){
+            return \CodeTrim\Models\Context::setCustomer($customer);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function changeLanguage($language_id){
+            return \CodeTrim\Models\Context::changeLanguage($language_id);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function changeCurrency($currency_id){
+            return \CodeTrim\Models\Context::changeCurrency($currency_id);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function addToCart($cart_type, $quantity, $product){
+            return \CodeTrim\Models\Context::addToCart($cart_type, $quantity, $product);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function removeFromCart($cart_type, $product_id){
+            return \CodeTrim\Models\Context::removeFromCart($cart_type, $product_id);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function updateCart($cart_type, $quantity, $product_id){
+            return \CodeTrim\Models\Context::updateCart($cart_type, $quantity, $product_id);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getCart($type){
+            return \CodeTrim\Models\Context::getCart($type);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function save(){
+            return \CodeTrim\Models\Context::save();
+        }
+        
+    }
+
+
+    class TaxService extends \CodeTrim\Facades\TaxServiceFacade{
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function calculateTaxes($price, $zone_id, $tax_class_id){
+            return \CodeTrim\Services\TaxService::calculateTaxes($price, $zone_id, $tax_class_id);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function calculateSummarizedTax($taxes){
+            return \CodeTrim\Services\TaxService::calculateSummarizedTax($taxes);
         }
         
     }

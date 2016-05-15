@@ -11,6 +11,7 @@
   use App\Http\Controllers\MyBaseController;
   use \Response;
   use \Request;
+  use Context;
 
   class OrderController extends MyBaseController {
     protected $service = NULL;
@@ -54,7 +55,7 @@
       $shipping_method_service = new ShippingMethodService();
       $payment_method_service = new PaymentMethodService();
 
-      $customer = $this->active_settings->getCustomer();
+      $customer = context::getCustomer();
       $zones = [];
 
       if ($customer != NULL) {
@@ -66,10 +67,10 @@
         'customer' => $customer,
         'shipping_methods' => $shipping_method_service->getAll([
           'sorting' => ['sort_order']
-        ], $this->active_settings->language_id),
+        ], context::getLanguageId()),
         'payment_methods' => $payment_method_service->getAll([
           'sorting' => ['sort_order']
-        ], $this->active_settings->language_id),
+        ], context::getLanguageId()),
       ]);
     }
 

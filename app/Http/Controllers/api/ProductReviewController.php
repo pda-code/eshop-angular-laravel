@@ -6,6 +6,7 @@
   use App\Http\Controllers\MyBaseController;
   use \Response;
   use \Request;
+  use \Input;
 
   class ProductReviewController extends MyBaseController {
     protected $service = NULL;

@@ -97,6 +97,10 @@
         }
       }
 
+      public function setCustomer($customer) {
+        $this->customer = $customer;
+      }
+
       public function changeLanguage($language_id) {
         $app = app();
         $language = $app->languageService->getById($language_id);

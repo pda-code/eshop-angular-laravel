@@ -8,6 +8,10 @@
   use App\Http\Controllers\MyBaseController;
   use \Response;
   use \Request;
+  use \Input;
+  use \Validator;
+  use Context;
+  use JWTAuth;
 
   class CustomerController extends MyBaseController {
     protected $service = NULL;
@@ -18,7 +22,7 @@
     }
 
     public function logout() {
-      $this->active_settings->customer_id = NULL;
+        context::setCustomer(null);
       //$this->settings->save();
     }
 
@@ -54,7 +58,7 @@
         return Response::json(array('error' => array('message' => 'customer not found')), 404);
       }
 
-      $this->active_settings->customer = $customer;
+      context::setCustomer($customer);
 
       $cart = NULL;
       $wishlist = NULL;

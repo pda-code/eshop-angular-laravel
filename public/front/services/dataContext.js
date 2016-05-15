@@ -5,7 +5,7 @@ appModule.service('dataContext', ['$http', function ($http) {
 
     self.repository = function (repositoryName) {
 
-         var apiRoot = 'http://195.251.253.15:8080/eShopLaravel/public/api/';
+         var apiRoot = 'http://local.eshoplaravel.gr:8080/api/';
 
          //bind params
          var bindParametersFn = function (url, params) {
