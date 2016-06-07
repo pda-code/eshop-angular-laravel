@@ -1,4 +1,4 @@
-Demo: http://195.251.253.15:8080/eShopLaravel/public 
+Demo: http://195.251.253.15:8080/eshop_laravel/public
 (If the apache server is down please inform me)
 
 ## Explanation
